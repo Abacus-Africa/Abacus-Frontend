@@ -1,0 +1,12 @@
+@import '../src/defaultStyles/colors.scss';
+
+html{
+    color: $secondaryColour;
+}
+
+nav a:hover{
+    border-bottom: 3px solid $secondaryColour;
+}
+.coming-page-right, .notify-btn{
+    background: $primaryColour;
+}
