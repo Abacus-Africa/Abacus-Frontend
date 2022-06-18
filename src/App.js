@@ -26,7 +26,7 @@ function App() {
           </div>
         </header>
 
-        <main className='mx-auto px-52 text-center align-center pt-24 box-border main-text'>
+        <main className='mx-auto px-52 text-center align-center pt-24 box-border gen-text'>
           <p className='text-3xl mb-14 abacu_s'><span className='text-5xl font-bold'>Abacus,</span> the Accounting Sofware to manage your business</p>
           <h1 className='m-5 font-medium text-8xl mb-14 com_ing'>Coming Soon</h1>
           <p>We'll let you know when we are launching</p>
