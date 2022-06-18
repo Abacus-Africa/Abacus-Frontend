@@ -10,3 +10,17 @@ nav a:hover{
 .coming-page-right, .notify-btn{
     background: $primaryColour;
 }
+
+@media (max-width:1000px) {
+    .coming-page-right{ display: none; }
+    .left-side{ width: 100%; }
+    .main-text{ width: 100%; padding: 100px 20px 0px 20px; }
+    .headings{ margin: 50px 20px 0px 20px; }
+}
+
+@media (max-width:500px) {
+    .headings{ align-items: center; }
+    .headings div img{ width: 110px; }
+    .abacu_s{ font-size: 30px; }
+    .com_ing{ margin: 0 0px 70px 0px; }
+}
