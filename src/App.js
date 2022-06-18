@@ -8,8 +8,8 @@ import MsgIcon from '../src/assets/images/msgicon.png'
 function App() {
   return (
     <div className="flex box-border">
-      <div className="w-9/12 left-side">
-        <header className='flex justify-between mt-12 mx-44 headings'>
+      <div className="w-9/12">
+        <header className='flex justify-between mt-12 mx-44'>
           <div>
             <img src={Logo} alt='abacus logo'></img>
           </div>
@@ -26,9 +26,9 @@ function App() {
           </div>
         </header>
 
-        <main className='mx-auto px-52 text-center align-center pt-24 box-border main-text'>
-          <p className='text-3xl mb-14 abacu_s'><span className='text-5xl font-bold'>Abacus,</span> the Accounting Sofware to manage your business</p>
-          <h1 className='m-5 font-medium text-8xl mb-14 com_ing'>Coming Soon</h1>
+        <main className='mx-auto px-52 text-center align-center pt-24 box-border'>
+          <p className='text-3xl mb-14'><span className='text-5xl font-bold'>Abacus,</span> the Accounting Sofware to manage your business</p>
+          <h1 className='m-5 font-medium text-8xl mb-14'>Coming Soon</h1>
           <p>We'll let you know when we are launching</p>
           <div className='flex mt-5 justify-center'>
             <input type='text' className='form-input px-4 py-2 rounded-xl border-2 mr-10 w-2/4' placeholder='Your email'/>
