@@ -44,7 +44,10 @@ function App() {
               ].map(([title, url]) => (
                 <a
                   href={url}
-                  className="px-3 py-2 text-slate-700 font-medium hover:text-slate-900"
+                  //when active class is added to the link, the color of the link changes to red
+                  // className="px-3 py-2 text-slate-700 font-medium hover:text-slate-900"
+                  className={`${window.location.pathname === url ? " text-pviolet linkStyles " : " px-3 py-2 text-slate-700 font-medium hover:text-slate-900"}`}
+                  
                 >
                   {title}
                 </a>
@@ -58,7 +61,7 @@ function App() {
 
         </header>
 
-        
+        {/* dropDown Nav */}
         <nav className="flex flex-col  items-end space-x-4 mt-5 drop">
               {[
                 ["Home", "/"],
@@ -67,7 +70,9 @@ function App() {
               ].map(([title, url]) => (
                 <a
                   href={url}
-                  className="py-2  text-slate-700 font-medium hover:text-slate-900 w-20 "
+                  className={`${window.location.pathname === url ? " text-pviolet linkStyles " : " px-3 py-2 text-slate-700 font-medium hover:text-slate-900"}`}
+
+                  // className="py-2  text-slate-700 font-medium hover:text-slate-900 w-20 "
                 >
                   {title}
                 </a>
@@ -77,27 +82,30 @@ function App() {
         <main className="mx-auto px-52 text-center align-center pt-24 box-border gen-text">
           <p className="text-3xl mb-14 abacu_s">
             <span className="text-5xl font-bold abac">Abacus,</span> the Accounting
-            Sofware to manage your business
+            Software to manage your business
           </p>
           <div className="comingimg">
           <img src={MainImg} alt="coming soon" ></img>
           </div>
-          <h1 className="m-5 font-medium text-8xl mb-14 com_ing">
-            Coming Soon
+          <h1 className="m-5 pt-2 leading-snug font-medium text-6xl mb-14 com_ing">
+            Be the first to know when we launch
           </h1>
           <p>We'll let you know when we are launching</p>
-          <div className="flex mt-5 justify-center">
+          <form className="flex mt-5 justify-center">
             <input
               type="text"
               className="form-input px-4 py-2 rounded-xl border-2 mr-10 w-2/4"
               placeholder="Your email"
             />
-            <input
+            <button
               type="submit"
-              value="Notify me"
-              className="text-white p-2 rounded-xl notify-btn"
-            />
-          </div>
+              // className="btn btn-primary px-4 py-2 rounded-xl"
+              className="text-white p-2 rounded-xl notify-btn hover:bg-gradient-to-tr from-pviolet to-pblack"
+
+            >
+              notify me
+              </button>
+          </form>
         </main>
 
         <footer className="ml-40 mt-14 footer">
