@@ -28,7 +28,7 @@ function ComingSoon(props) {
 
   return (
     <div className="flex box-border">
-      <div className="w-9/12 left-side">
+      <div className="w-9/12 left-side h-screen">
         <header className="flex justify-between mt-12 mx-44 headings">
 
           <div>
