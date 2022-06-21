@@ -1,0 +1,49 @@
+@import '../../../src/defaultStyles/colors.scss';
+
+html{
+    color: $secondaryColour;
+}
+
+nav a:hover{
+    border-bottom: 3px solid $secondaryColour;
+}
+
+.coming-page-right, .notify-btn{
+    background: $primaryColour;
+}
+
+.menu-dropdown{
+    display: none;
+}
+
+.drop{
+    display: none;
+}
+
+.comingimg{
+    display: none;
+    justify-content: center;
+}
+
+@media (max-width:1024px) {
+    .coming-page-right{ display: none; }
+    .left-side{ width: 100%; }
+    .launch{margin: -1em 0.2em -1.5em;}
+    .headings{ margin: 50px 20px 0px 20px; }
+    .abacu_s{ font-size: 22px; margin: 0.5em; padding: 0 0 0.7em 0;}
+    .gen-text{ padding: 25px 10px 0; margin: 0; }
+    .comingimg{ display: flex; }
+    .comingimg img{ height: 450px; width: 60%; }
+    .footer{margin: 1.6em 0 0 1.6em;}
+}
+@media screen and (max-width:639px) {
+    .headings{ align-items: center; }
+    .headings div img{ width: 110px; }
+    .com_ing{ margin: 15px 5px 25px; font-size: 50px; }
+    .links{ display: none; }
+    .menu-dropdown{ display: inline; font-size: 25px;  }
+    .abac{ font-size: 30px; }
+    .comingimg img{ height: 300px; width: 70% ;}
+    .notify-btn{width: 100px; margin: 10px 0 0 0;}
+}
+

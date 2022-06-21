@@ -6,8 +6,8 @@ module.exports = {
     extend: {
       colors: {
         pblack: "#160051",
-       pblue: "#143d59",
-       pviolet: "#e758d4",
+        pblue: "#143d59",
+        pviolet: "#e758d4",
       },
     },
   },
