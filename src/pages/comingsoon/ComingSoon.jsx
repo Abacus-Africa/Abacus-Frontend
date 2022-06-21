@@ -89,7 +89,7 @@ function ComingSoon(props) {
 
         </main>
 
-        <footer className="ml-40 mt-14 footer">
+        <footer className="ml-40 mt-14 overflow-hidden footer">
           <div>
           <h2 className="text-3xl font-bold">Abacus</h2>
           <p className="text-xs">As easy as it gets</p>
