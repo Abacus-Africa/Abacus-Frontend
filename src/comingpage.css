@@ -1,0 +1,115 @@
+html {
+  color: #0E0033;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #0E0033;
+}
+
+.coming-page-right, .notify-btn {
+  background: linear-gradient(167.61deg, #0E0033 5.46%, #160051 14.75%, #270B73 32.35%, #35197F 51.45%, #270B73 68.58%, #160051 83.6%, #0E0033 94.62%);
+}
+
+.menu-dropdown {
+  display: none;
+}
+
+.drop {
+  display: none;
+}
+
+.comingimg {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comingimg img {
+  height: 200px;
+  width: 300px;
+}
+
+@media (max-width: 1000px) {
+  .coming-page-right {
+    display: none;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .main-text {
+    width: 100%;
+    padding: 100px 20px 0px 20px;
+  }
+  .headings {
+    margin: 50px 20px 0px 20px;
+  }
+  .gen-text {
+    width: 100%;
+    padding: 100px 10px 0px 10px;
+  }
+  .comingimg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .comingimg img {
+    height: 450px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 500px) {
+  .headings {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headings div img {
+    width: 110px;
+  }
+  .abacu_s {
+    font-size: 22px;
+  }
+  .com_ing {
+    margin: 30 0px 70px 0px;
+    font-size: 50px;
+  }
+  .gen-text {
+    width: 100%;
+    padding: 100px 0px 0px 0px;
+  }
+  .links {
+    display: none;
+  }
+  .menu-dropdown {
+    display: inline;
+    font-size: 25px;
+  }
+  .abac {
+    font-size: 30px;
+  }
+  .comingimg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .comingimg img {
+    height: 200px;
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=comingpage.css.map */
