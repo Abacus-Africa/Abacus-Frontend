@@ -18,11 +18,15 @@ function ComingSoon(props) {
   
   function dropDown(){
     let drop = document.querySelector('.drop')
-    if( drop.style.display === 'flex' ){
-      drop.style.display = 'none'
+    if( drop.style.height === '200px' ){
+      drop.style.height ='0px'
+      document.querySelectorAll('.droplink').forEach((item)=>item.style.display='none')
     }
     else{
-      drop.style.display = 'flex'
+      drop.style.height ='200px'
+      setTimeout(() => {
+        document.querySelectorAll('.droplink').forEach((item)=>item.style.display='flex')
+      }, 650);
     }
   }
 
@@ -46,7 +50,7 @@ function ComingSoon(props) {
                 <a
                   href={url}
                   //when active class is added to the link, the color of the link changes to red
-                  className={`${window.location.pathname === url ? " text-pviolet linkStyles " : " linkStyles"}`}
+                  className={`${window.location.pathname === url ? " text-pviolet linkStyles  " : " linkStyles "}`}
                   
                 >
                   {title}
@@ -62,15 +66,17 @@ function ComingSoon(props) {
         </header>
 
         {/* dropDown Nav */}
+        <div className="nav-dropdown">
         <nav className="flex flex-col items-end mt-5 mr-3 drop">
               {[
                 ["Home", "/"],
                 ["FAQ", "/faq"],
                 ["Blog", "https://abacusafrica.hashnode.dev/"],
               ].map(([title, url]) => (
-                <a href={url} className={`${window.location.pathname === url ? " text-pviolet linkStyles " : " linkStyles"}`}>{title}</a>
-              ))}
+                <a href={url} className={`${window.location.pathname === url ? " text-pviolet linkStyles droplink" : " linkStyles droplink"}`}>{title}</a>
+                ))}
             </nav>
+          </div>
 
         <main className="px-52 text-center align-center my-28 box-border gen-text">
           <p className="text-3xl mb-12 abacu_s">
