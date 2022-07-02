@@ -68,6 +68,19 @@
                 span{
                     font-size: 12px;
                 }
+                svg{
+                    color: white;
+                    
+                }
+            }
+            .btn-wrapper{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                button{
+                    color: white;
+                    border-color: white;
+                }
             }
     }
     }

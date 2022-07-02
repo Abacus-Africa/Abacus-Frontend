@@ -114,4 +114,23 @@
 .signup_wrapper .sign_up_form_wrapper .sign_up_form .form_check span {
   font-size: 12px;
 }
+
+.signup_wrapper .sign_up_form_wrapper .sign_up_form .form_check svg {
+  color: white;
+}
+
+.signup_wrapper .sign_up_form_wrapper .sign_up_form .btn-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup_wrapper .sign_up_form_wrapper .sign_up_form .btn-wrapper button {
+  color: white;
+  border-color: white;
+}
 /*# sourceMappingURL=Signup.css.map */
