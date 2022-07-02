@@ -33,7 +33,7 @@ function ComingSoon(props) {
 
   return (
     <div className="flex box-border">
-      <div className="w-9/12 left-side h-screen">
+      <div className="w-9/12 left-side">
         <header className="flex justify-between mt-12 mx-44 headings">
           <div>
             <a href="/">
@@ -45,7 +45,7 @@ function ComingSoon(props) {
             <nav className="flex justify-end space-x-4 ">
               {[
                 ["Home", "/"],
-                ["FAQ", "/faq"],
+                ["FAQ", "/"],
                 ["Blog", "https://abacusafrica.hashnode.dev/"],
               ].map(([title, url]) => (
                 <a
@@ -90,15 +90,15 @@ function ComingSoon(props) {
           </nav>
         </div>
 
-        <main className="px-52 text-center align-center my-28 box-border gen-text">
-          <p className="text-3xl mb-12 abacu_s">
+        <main className="px-48 text-center align-center my-24 box-border gen-text">
+          <p className="text-3xl mb-10 abacu_s">
             <span className="text-5xl font-bold">Abacus,</span> the Accounting
             Software to manage your business
           </p>
           <div className="comingimg">
             <img src={MainImg} alt="coming soon"></img>
           </div>
-          <h1 className="pt-2 leading-snug font-medium text-7xl mb-10 com_ing">
+          <h1 className="pt-2 leading-snug font-medium text-6xl mb-8 com_ing">
             Coming Soon
           </h1>
           <p className="launch text-lg">Be the first to know when we launch</p>
@@ -106,7 +106,7 @@ function ComingSoon(props) {
           <Mailchimp />
         </main>
 
-        <footer className="ml-40 mt-8 overflow-hidden footer">
+        <footer className="ml-40 pt-10 footer">
           <div>
             <h2 className="text-3xl font-bold">Abacus</h2>
             <p className="text-xs">As easy as it gets</p>
@@ -134,6 +134,7 @@ function ComingSoon(props) {
           </div>
         </footer>
       </div>
+
       <div className="flex flex-col w-3/12 coming-page-right h-screen rounded-l-2xl">
         <div className="relative">
           <div className="absolute top-32 -left-28">

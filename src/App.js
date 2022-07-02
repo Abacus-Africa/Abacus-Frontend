@@ -9,6 +9,7 @@ function App(props) {
   return (
     <div>
       <Router>
+        {/* <Nav /> */}
         <Routes>
           <Route path='/' element={<ComingSoon />} ></Route>
           <Route path='login' element={<Login />} ></Route>
