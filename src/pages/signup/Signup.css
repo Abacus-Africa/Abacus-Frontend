@@ -16,14 +16,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 40px;
 }
 
 .signup_wrapper .signup_side_image img {
   width: 60%;
-  height: 70%;
+  height: 400px;
 }
 
 .signup_wrapper .signup_side_image div {
