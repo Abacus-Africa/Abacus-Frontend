@@ -45,7 +45,7 @@ function ComingSoon(props) {
             <nav className="flex justify-end space-x-4 ">
               {[
                 ["Home", "/"],
-                ["FAQ", "/"],
+                ["FAQ", "signup"],
                 ["Blog", "https://abacusafrica.hashnode.dev/"],
               ].map(([title, url]) => (
                 <a
@@ -73,7 +73,7 @@ function ComingSoon(props) {
           <nav className="flex flex-col items-end mt-5 mr-3 drop">
             {[
               ["Home", "/"],
-              ["FAQ", "/faq"],
+              ["FAQ", "signup"],
               ["Blog", "https://abacusafrica.hashnode.dev/"],
             ].map(([title, url]) => (
               <a
