@@ -7,11 +7,11 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Nav from "../../components/nav/Nav";
 import Button from "@mui/material/Button";
-import Divider from '@mui/material/Divider';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import Divider from "@mui/material/Divider";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Signup = () => {
   const [loading, setLoading] = useState(false);
@@ -79,6 +79,7 @@ const Signup = () => {
               <Typography variant="h6">Or</Typography>
               <Box>
                 <Button variant="contained">
+                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -113,15 +114,15 @@ const Signup = () => {
           </div>
           <footer>
             <Box>
-                <Typography>Abacus</Typography>
-                <Typography>As easy as it gets</Typography>
+              <Typography>Abacus</Typography>
+              <Typography>As easy as it gets</Typography>
             </Box>
             <hr></hr>
             <Box>
-                <LinkedInIcon />
-                <FacebookIcon />
-                <TwitterIcon />
-                <InstagramIcon />
+              <LinkedInIcon />
+              <FacebookIcon />
+              <TwitterIcon />
+              <InstagramIcon />
             </Box>
           </footer>
         </div>
