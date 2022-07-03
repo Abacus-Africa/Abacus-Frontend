@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Signup.css";
 import girl from "../../assets/images/girl.png";
 import { Typography } from "@mui/material";
