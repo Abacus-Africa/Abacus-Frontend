@@ -7,17 +7,17 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Nav from "../../components/nav/Nav";
 import Button from "@mui/material/Button";
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Signup = () => {
-  const [loading, setLoading] = useState(false);
-  function handleClick() {
-    setLoading(!loading);
-  }
+//   const [loading, setLoading] = useState(false);
+//   function handleClick() {
+//     setLoading(!loading);
+//   }
 
   return (
     <>
