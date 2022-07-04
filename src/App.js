@@ -12,8 +12,8 @@ function App(props) {
         {/* <Nav /> */}
         <Routes>
           <Route path='/' element={<ComingSoon />} ></Route>
-          <Route path='login' element={<Login />} ></Route>
-          <Route path='signup' element={<Signup />} ></Route>
+          <Route path='/login' element={<Login />} ></Route>
+          <Route path='/signup' element={<Signup />} ></Route>
         </Routes>
       </Router>
     </div>
