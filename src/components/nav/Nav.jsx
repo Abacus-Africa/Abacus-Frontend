@@ -37,9 +37,9 @@ const Nav = () => {
         </a>
         </div>
 
-        <div class="hidden">
-            <button class="flex items-center px-3 py-2 border rounded text-black-200 border-black-400 hover:text-pviolet hover:border-pviolet">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        <div className="hidden">
+            <button className="flex items-center px-3 py-2 border rounded text-black-200 border-black-400 hover:text-pviolet hover:border-pviolet">
+            <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
         </div>
 
@@ -50,9 +50,11 @@ const Nav = () => {
             ["Support", "/"],
             ["Blog", "https://abacusafrica.hashnode.dev/"],
             ["Pricing", "/"]
-            ].map(([title, url]) => (
+            ].map(([title, url,],index) => (
             <a
                 href={url}
+                key={index}
+
                 //when active class is added to the link, the color of the link changes to red
                 // className={`${
                 // window.location.pathname === url
@@ -69,10 +71,11 @@ const Nav = () => {
             {[
             ["Log In", "/", "text-slate-700 border border-black rounded w-20 py-2"],
             ["Sign Up", "/", "text-pviolet border border-pviolet rounded w-32 py-2"]
-            ].map(([title, url, style]) => (
+            ].map(([title, url, style],index) => (
             <a
                 href={url}
                 className={style}
+                key={index}
             >
                 {title}
             </a>

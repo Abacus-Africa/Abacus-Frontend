@@ -160,11 +160,12 @@
 
 .signup_wrapper .sign_up_form_wrapper .sign_up_form .btn-wrapper div button {
   text-transform: capitalize;
-  font-size: 12px;
+  font-size: 10px;
   height: 45px;
   background-color: white;
   color: #160051;
   width: 180px;
+  margin-right: 5px;
 }
 
 .signup_wrapper .sign_up_form_wrapper .sign_up_form .btn-wrapper div button:hover {
