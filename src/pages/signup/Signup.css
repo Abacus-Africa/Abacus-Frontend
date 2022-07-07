@@ -20,8 +20,8 @@
 }
 
 .signup_wrapper .signup_side_image img {
-  width: 60%;
-  height: 400px;
+  width: calc(60% + 100px);
+  height: calc(60% + 100px);
 }
 
 .signup_wrapper .signup_side_image div {
@@ -160,7 +160,7 @@
 
 .signup_wrapper .sign_up_form_wrapper .sign_up_form .btn-wrapper div button {
   text-transform: capitalize;
-  font-size: 10px;
+  font-size: 12px;
   height: 45px;
   background-color: white;
   color: #160051;
