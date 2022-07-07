@@ -1,4 +1,4 @@
-import { Box, Dialog, IconButton, Slide } from "@mui/material";
+import { Box, IconButton} from "@mui/material";
 import React from "react";
 import Logo from "../../assets/images/logo.png";
 import "./Nav.css";
