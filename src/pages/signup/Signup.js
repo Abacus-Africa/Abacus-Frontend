@@ -11,8 +11,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { Link } from "react-router-dom";
-
 
 const Signup = () => {
 
@@ -106,7 +104,7 @@ const Signup = () => {
                 </Button>
               </Box>
               <Typography className="login_link">
-                Already have an account? <span><Link to='/login'>Login</Link></span>
+                Already have an account? <span>Login</span>
               </Typography>
             </Box>
           </div>
