@@ -11,8 +11,8 @@
         margin-top: 40px;
 
         img{
-            width: 60%;
-            height: 400px;
+            width: calc(60% + 100px);
+            height: calc(60% + 100px);
         }
         div{
             padding-left: 10%;
