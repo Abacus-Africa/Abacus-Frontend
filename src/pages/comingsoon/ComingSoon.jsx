@@ -12,8 +12,6 @@ import Logo from "../../assets/images/logo.png";
 import MainImg from "../../assets/images/coming-pageimg.png";
 // import MsgIcon from "../src/assets/images/msgicon.png";
 import Mailchimp from "../../components/mailchimp/Mailchimp";
-import { Link } from "react-router-dom";
-
 
 function ComingSoon(props) {
   function dropDown() {
@@ -47,12 +45,11 @@ function ComingSoon(props) {
             <nav className="flex justify-end space-x-4 ">
               {[
                 ["Home", "/"],
-                ["FAQ", "/"],
-                ["Signup", "signup"],
+                ["FAQ", "signup"],
                 ["Blog", "https://abacusafrica.hashnode.dev/"],
               ].map(([title, url]) => (
-                <Link
-                  to={url}
+                <a
+                  href={url}
                   //when active class is added to the link, the color of the link changes to red
                   className={`${
                     window.location.pathname === url
@@ -61,7 +58,7 @@ function ComingSoon(props) {
                   }`}
                 >
                   {title}
-                </Link>
+                </a>
               ))}
             </nav>
           </div>
@@ -76,12 +73,11 @@ function ComingSoon(props) {
           <nav className="flex flex-col items-end mt-5 mr-3 drop">
             {[
               ["Home", "/"],
-              ["FAQ", "/"],
-              ["Signup", "signup"],
+              ["FAQ", "signup"],
               ["Blog", "https://abacusafrica.hashnode.dev/"],
             ].map(([title, url]) => (
-              <Link
-                to={url}
+              <a
+                href={url}
                 className={`${
                   window.location.pathname === url
                     ? " text-pviolet linkStyles droplink"
@@ -89,7 +85,7 @@ function ComingSoon(props) {
                 }`}
               >
                 {title}
-              </Link>
+              </a>
             ))}
           </nav>
         </div>
