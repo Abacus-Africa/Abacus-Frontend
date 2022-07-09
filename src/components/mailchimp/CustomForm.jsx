@@ -30,7 +30,7 @@ const CustomForm = ({ status, message, onValidated }) => {
         <div>
             <form
                 onSubmit={(e)=> handleSubmit(e)}
-                className="flex flex-row"
+                className="flex flex-wrap"
             >
             {status === 'sending' && (
                 <div>
@@ -50,7 +50,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                 id="email"
                 name="email"
                 required
-                className="form-input px-4 py-3 rounded-xl border-2 border-black mr-8 sm:w-2/4 outline-none"
+                className="form-input px-4 py-3 rounded-xl border-2 border-black mr-8 w-3/4 md:w-2/4 outline-none"
                 onChange={handleEmailChange}
                 placeholder="Your Email"
                 value={email}
@@ -62,7 +62,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                 type="submit"
                 value='Notify Me'
                 formValues={[email]}
-                className="text-white p-2 rounded-xl notify-btn bg-pblue hover:bg-gradient-to-tr from-pviolet to-pblack"
+                className="text-white p-2 mt-2 sm:mt-0 rounded-xl notify-btn bg-pblue hover:bg-gradient-to-tr from-pviolet to-pblack"
 
                 />
 
