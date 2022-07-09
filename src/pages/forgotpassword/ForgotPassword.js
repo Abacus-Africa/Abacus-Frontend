@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import Nav from "../../components/nav/Nav";
+// import Nav from "../../components/nav/Nav";
 import "./ForgotPassword.css";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 const ForgotPassword = () => {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <div className="forgot-password-wrapper">
         <Card
           sx={{  minWidth: { sm:350 , md:450 },  background: "#160051", padding: "40px 40px" }}

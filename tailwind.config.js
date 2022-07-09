@@ -5,9 +5,14 @@ module.exports = {
     container: {center: true,},
     extend: {
       colors: {
-        pblack: "#160051",
-        pblue: "#143d59",
+        pblack: "#0E0033",
+        pblue: "#160051",
+        lightBlue: "#4B29A6",
         pviolet: "#e758d4",
+        plightviolet: "#FFE2FF",
+        pink: "#FCB5B5",
+        gray: "#ECE5FF",
+        lightGray: "#F6F2FF",
       },
     },
   },
