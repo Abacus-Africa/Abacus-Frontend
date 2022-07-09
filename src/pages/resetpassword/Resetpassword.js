@@ -7,13 +7,13 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import Nav from "../../components/nav/Nav";
+// import Nav from "../../components/nav/Nav";
 import './Resetpassword.css'
 
 const Resetpassword = () => {
   return (
     <>
-    <Nav />
+    {/* <Nav /> */}
     <div className="reset-password-wrapper">
       <Card
         sx={{  minWidth: { sm:350 , md:450 },  background: "#160051", padding: "40px 40px" }}
