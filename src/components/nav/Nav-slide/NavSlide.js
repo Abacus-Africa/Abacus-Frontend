@@ -39,7 +39,7 @@ const NavSlide = (props) => {
             onClick={handleClose}
             aria-label="close"
           >
-            <CloseIcon />
+            <CloseIcon className='text-pblue'/>
           </IconButton>
         </Toolbar>
 

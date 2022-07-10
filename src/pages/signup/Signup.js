@@ -5,7 +5,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import Nav from "../../components/nav/Nav";
+// import Nav from "../../components/nav/Nav";
 import Button from "@mui/material/Button";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -20,7 +20,7 @@ import apple from './../../assets/icons/Apple Icon.svg'
 const Signup = () => {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <div className="signup_wrapper">
         <div className="signup_side_image">
           
