@@ -4,7 +4,6 @@ import Logo from "../../assets/images/logo.png";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import NavSlide from "./Nav-slide/NavSlide";
-import './Nav.css'
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -71,14 +70,14 @@ const Nav = () => {
           sx={{
             display: { xs: "block", md: "none" },
           }}
-          className='icon'
         >
           <IconButton
             aria-label="menu dropdown"
             size="large"
             onClick={handleOpen}
+            
           >
-            <MenuIcon fontSize="inherit" color='rgb(0,0,0)' />
+            <MenuIcon fontSize="inherit" color='dark' />
           </IconButton>
         </Box>
       </div>
