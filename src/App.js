@@ -13,7 +13,6 @@ function App(props) {
   return (
     <div>
       <Router>
-        <Nav />
         <Routes>
           <Route path='/' element={<Landing />} ></Route>
           <Route path='login' element={<Login />} ></Route>

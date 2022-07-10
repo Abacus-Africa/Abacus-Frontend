@@ -20,7 +20,7 @@ import apple from './../../assets/icons/Apple Icon.svg'
 const Signup = () => {
   return (
     <>
-      {/* <Nav /> */}
+      <Nav />
       <div className="signup_wrapper">
         <div className="signup_side_image">
           
