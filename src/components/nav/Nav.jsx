@@ -1,4 +1,4 @@
-import { Box, Dialog, IconButton, Slide } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import React from "react";
 import Logo from "../../assets/images/logo.png";
 import "./Nav.css";
@@ -32,7 +32,7 @@ const Nav = () => {
             display: { xs: "none", md: "flex" },
           }}
         >
-          <nav className="flex p-3 space-x-6 font-medium">
+          <nav className="flex p-3 space-x-6 font-medium" style={{alignItems:'center'}}>
             {[
               ["Home", "/"],
               ["Support", "/"],
@@ -43,25 +43,27 @@ const Nav = () => {
                 {title}
               </a>
             ))}
-          </nav>
-
-          <div className="flex space-x-4 font-medium text-center p-3">
+            
             {[
               [
                 "Log In",
                 "/login",
-                "text-slate-700 border border-black rounded w-20 py-2",
+                "text-slate-700 border border-black rounded  w-20 py-2 buttons",
               ],
               [
                 "Sign Up",
                 "/signup",
-                "text-pviolet border border-pviolet rounded w-32 py-2",
+                "text-pviolet border border-pviolet rounded w-32 py-2 buttons",
               ],
             ].map(([title, url, style], index) => (
-              <a href={url} className={style} key={index}>
+              <a href={url} className={style} key={index} style={{display:'flex',justifyContent:'center'}}>
                 {title}
               </a>
             ))}
+          </nav>
+
+          <div className="flex space-x-4 font-medium text-center p-3">
+           
           </div>
         </Box>
 
@@ -75,7 +77,7 @@ const Nav = () => {
             size="large"
             onClick={handleOpen}
           >
-            <MenuIcon fontSize="inherit" />
+            <MenuIcon fontSize="inherit" color='dark' />
           </IconButton>
         </Box>
       </div>

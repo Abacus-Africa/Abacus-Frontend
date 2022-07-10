@@ -18,7 +18,7 @@ const ForgotPassword = () => {
       <Nav />
       <div className="forgot-password-wrapper">
         <Card
-          sx={{  minWidth: { sm:350 , md:450 },  background: "#160051", padding: "40px 40px" }}
+          sx={{  minWidth: { sm:350 , md:450 },  background: "#160051", padding: "40px 10px" }}
           className="forgot-password-card"
         >
           <CardContent

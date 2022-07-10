@@ -26,7 +26,7 @@
 
 .login_wrapper .login_side_image div {
   padding-left: 10%;
-  width: 60%;
+  width: calc(60% + 100px);
 }
 
 .login_wrapper .login_side_image div span {
@@ -65,11 +65,14 @@
   margin-top: 60px;
 }
 
+.login_wrapper .log_in_form_wrapper .log_in_form form {
+  width: 100%;
+}
+
 .login_wrapper .log_in_form_wrapper .log_in_form div:nth-child(1) {
   margin-top: 2rem;
   font-weight: 500;
   width: 100%;
-  text-align: center;
   font-size: 30px;
 }
 
@@ -87,7 +90,8 @@
 
 .login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper label {
   color: white;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper input {
@@ -96,22 +100,40 @@
   background-color: white;
   border-radius: 5px;
   padding-left: 10px;
-}
-
-.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper ::-webkit-input-placeholder {
   font-size: 13px;
 }
 
-.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper :-ms-input-placeholder {
+.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper input:focus {
+  outline: none;
+  border: 1px solid #387dde;
+}
+
+.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper input::-webkit-input-placeholder {
   font-size: 13px;
 }
 
-.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper ::-ms-input-placeholder {
+.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper input:-ms-input-placeholder {
   font-size: 13px;
 }
 
-.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper ::placeholder {
+.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper input::-ms-input-placeholder {
   font-size: 13px;
+}
+
+.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper input::placeholder {
+  font-size: 13px;
+}
+
+.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper .info-error {
+  border: 1px solid #ff0000;
+}
+
+.login_wrapper .log_in_form_wrapper .log_in_form .login_input_wrapper .error {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ff0000;
+  margin-top: 3px;
 }
 
 .login_wrapper .log_in_form_wrapper .log_in_form .form_check {
@@ -191,8 +213,9 @@
   background-color: #f2b9ea;
 }
 
-.login_wrapper .log_in_form_wrapper .log_in_form .btn-wrapper div button svg {
+.login_wrapper .log_in_form_wrapper .log_in_form .btn-wrapper div button img {
   margin-right: 5px;
+  width: 20px;
 }
 
 .login_wrapper .log_in_form_wrapper .log_in_form .btn-wrapper .login_link {
@@ -208,14 +231,12 @@
 
 .login_wrapper .log_in_form_wrapper footer {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 40px;
+  padding-left: 10px;
   margin-top: 30px;
 }
 
@@ -224,7 +245,7 @@
   height: 100px;
   width: 1px;
   background-color: rgba(255, 255, 255, 0.356);
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .login_wrapper .log_in_form_wrapper footer div p:nth-child(1) {
@@ -256,8 +277,13 @@
   .login_wrapper .log_in_form_wrapper {
     width: 100%;
   }
+  .login_wrapper .log_in_form_wrapper footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .login_wrapper .log_in_form_wrapper .log_in_form {
-    width: 70%;
+    width: 80%;
   }
   .login_wrapper .log_in_form_wrapper .log_in_form .btn-wrapper div {
     -webkit-box-orient: vertical;
