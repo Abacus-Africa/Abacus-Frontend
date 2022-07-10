@@ -5,4 +5,8 @@
 .nav-heading .buttons {
   border-radius: 10px;
 }
+
+.nav-heading .icon svg {
+  color: black;
+}
 /*# sourceMappingURL=Nav.css.map */
