@@ -48,7 +48,7 @@ const NavSlide = (props) => {
             ["Home", "/"],
             ["Support", "/"],
             ["Blog", "https://abacusafrica.hashnode.dev/"],
-            ["Pricing", "/"],
+            ["Pricing", "/pricing"],
             ["Login", "/login"],
             ["Signup", "/signup"],
           ].map(([title, url], index) => (

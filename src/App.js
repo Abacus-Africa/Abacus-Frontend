@@ -6,6 +6,7 @@ import Signup from "./pages/signup/Signup";
 import ForgotPassword from "./pages/forgotpassword/ForgotPassword";
 import Resetpassword from "./pages/resetpassword/Resetpassword";
 import Landing from "./pages/landing/Landing";
+import Pricing from "./components/pricing";
 
 function App(props) {
   
@@ -19,6 +20,7 @@ function App(props) {
           <Route path='signup' element={<Signup />} ></Route>
           <Route path='forgotpassword' element={<ForgotPassword />} ></Route>
           <Route path='resetpassword' element={<Resetpassword />} ></Route>
+          <Route path='pricing' element={<Pricing />} ></Route>
         </Routes>
       </Router>
     </div>
