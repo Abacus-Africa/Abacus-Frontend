@@ -36,7 +36,7 @@ const Nav = () => {
               ["Home", "/"],
               ["Support", "/"],
               ["Blog", "https://abacusafrica.hashnode.dev/"],
-              ["Pricing", "/"],
+              ["Pricing", "/pricing"],
             ].map(([title, url], index) => (
               <a href={url} key={index} className='hover:border-b-2'>
                 {title}

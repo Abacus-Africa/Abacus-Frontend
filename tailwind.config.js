@@ -15,6 +15,7 @@ module.exports = {
         gray: "#ECE5FF",
         inbetweenGray: "#656565",
         lightGray: "#F6F2FF",
+        lemon: "#22C55E",
       },
     },
   },
