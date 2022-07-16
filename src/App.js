@@ -1,6 +1,6 @@
 // import ComingSoon from "./pages/comingsoon/ComingSoon";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Nav from "./components/nav/Nav"
+// import Nav from "./components/nav/Nav"
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import ForgotPassword from "./pages/forgotpassword/ForgotPassword";
