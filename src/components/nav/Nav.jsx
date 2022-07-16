@@ -42,27 +42,31 @@ const Nav = () => {
                 {title}
               </a>
             ))}
-            
+          </nav>
+        </Box>
+
+        <Box
+          sx={{
+            display: { xs: "none", md: "flex" },
+          }}
+        >
+          <div className="flex space-x-4 font-medium text-center p-3" >
             {[
               [
                 "Log In",
                 "/login",
-                "text-slate-700 border border-black rounded  w-20 py-2 buttons",
+                "text-pblue border border-pblue rounded w-20 py-2",
               ],
               [
                 "Sign Up",
                 "/signup",
-                "text-pviolet border border-pviolet rounded w-32 py-2 buttons",
+                "text-pviolet border border-pviolet rounded w-32 py-2",
               ],
             ].map(([title, url, style], index) => (
-              <a href={url} className={style} key={index} style={{display:'flex',justifyContent:'center'}}>
+              <a href={url} className={style} key={index} >
                 {title}
               </a>
             ))}
-          </nav>
-
-          <div className="flex space-x-4 font-medium text-center p-3">
-           
           </div>
         </Box>
 
@@ -77,7 +81,7 @@ const Nav = () => {
             onClick={handleOpen}
             
           >
-            <MenuIcon fontSize="inherit" color='dark' />
+            <MenuIcon fontSize="inherit" className="text-pblue" />
           </IconButton>
         </Box>
       </div>

@@ -46,7 +46,7 @@ const Landing = () => {
             <a href='#offer' ><img src={Angle} alt='angle arrow'></img></a>
         </div>
     </main>
-    <section id='offer' className='container mt-14 text-pblue px-5 md:px-24'>
+    <section id='offer' className='container mt-14 text-pblue px-5 text-sm md:text-base md:px-24'>
         <h3 className='font-medium'>WHAT WE OFFER</h3>
             <div className='block md:flex text-justify md:items-center mt-14'>
                 <div className='md:w-1/2 flex justify-end md:block'>
@@ -212,7 +212,7 @@ const Landing = () => {
                     </a>
                 </div>
                 <p className='mb-5'>Get updates on offers, new features and discounts.</p>
-                <form>
+                <form className='text-black'>
                     <div className='flex flex-col'>
                         <label for="name">First Name</label>
                         <input type='text' id="name"

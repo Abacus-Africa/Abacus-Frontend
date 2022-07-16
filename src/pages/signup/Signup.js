@@ -43,14 +43,14 @@ const Signup = () => {
                 confirmpassword: "",
               }}
 
-              onSubmit={async (values) => {
-                const body = {
-                  name: values.name,
-                  email: values.email,
-                };
+              // onSubmit={async (values) => {
+              //   const body = {
+              //     name: values.name,
+              //     email: values.email,
+              //   };
 
                 // alert(JSON.stringify(body));
-              }}
+              // }}
               validationSchema={Yup.object({
                 name: Yup.string().required("name is required"),
                 email: Yup.string()
@@ -161,12 +161,12 @@ const Signup = () => {
                     <Box>
                       <Button variant="contained">
                         {" "}
-                        <img src={google} />
+                        <img src={google} alt='google'/>
                         Sign up with Google
                       </Button>
                       <Button variant="contained">
                       {" "}
-                        <img src={apple} />
+                        <img src={apple} alt='apple'/>
                         Sign up with Apple
                       </Button>
                     </Box>

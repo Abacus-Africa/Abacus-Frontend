@@ -49,13 +49,13 @@ const Login = () => {
                   password: Yup.string().required("password is required"),
               })}
 
-              onSubmit={async (values) =>{
-                const body ={
-                  email:values.email,
-                  password:values.password
-                }
-                // alert(JSON.stringify(body))
-              }}
+              // onSubmit={async (values) =>{
+              //   const body ={
+              //     email:values.email,
+              //     password:values.password
+              //   }
+              //   alert(JSON.stringify(body))
+              // }}
             >
 
               {({
@@ -124,11 +124,11 @@ const Login = () => {
                     <Box>
                       <Button variant="contained">
                         {" "}
-                        <img src={google} />
+                        <img src={google} alt='google'/>
                         Login with Google
                       </Button>
                       <Button variant="contained">
-                      <img src={apple} />
+                      <img src={apple} alt='apple'/>
                         Login with Apple
                       </Button>
                     </Box>

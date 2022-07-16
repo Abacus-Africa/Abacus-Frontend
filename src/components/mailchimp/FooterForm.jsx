@@ -62,7 +62,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                 type="submit"
                 value='Be the first to know'
                 formValues={[email]}
-                className="bg-purple text-pblack p-2 rounded-r-lg w-2/6"
+                className="bg-purple text-pblack p-2 rounded-r-lg w-1/6 md:w-2/6"
 
                 />
 
