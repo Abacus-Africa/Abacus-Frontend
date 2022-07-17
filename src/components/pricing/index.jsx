@@ -13,7 +13,7 @@ const Pricing = () => {
             <p className='font-medium text-xl mt-3 mb-5'>Pick a plan now</p>
             <Toggle month={pricingPlan} year={setPricingPlan} />
         </div>
-        {pricingPlan ? <Monthly /> : <YearlyPricing />}
+        {pricingPlan ? <YearlyPricing /> :  <Monthly />}
     </section>
   )
 }
