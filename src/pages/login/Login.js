@@ -5,7 +5,6 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import Nav from "../../components/nav/Nav";
 import Button from "@mui/material/Button";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -21,7 +20,6 @@ import apple from './../../assets/icons/Apple Icon.svg'
 const Login = () => {
   return (
     <>
-      <Nav />
       <div className="login_wrapper">
         <div className="login_side_image">
           <img src={girl} alt="girl" />

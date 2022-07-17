@@ -3,20 +3,19 @@ import Girl from "../../assets/images/girl.png"
 import MobileGirl from "../../assets/images/mobileGirl.svg"
 import Mailchimp from '../../components/mailchimp/Mailchimp'
 import Angle from "../../assets/images/downangle.svg"
-import Nav from '../../components/nav/Nav'
+// import Nav from '../../components/nav/Nav'
 import Pricing from '../../components/pricing'
 import Footer from '../../components/footer'
 
 const Landing = () => {
   return (
     <>
-    <Nav />
     <main className="block md:flex md:container text-pblue mt-16 md:mt-28 md:px-24">
         <div className='md:w-3/4 px-10 md:px-0 md:container text-left font-medium mb-10 md:mb-0 md:mt-28 md:pr-20'>
             <span className="bg-plightviolet text-pviolet rounded-full p-2">
             &#8226; Coming Soon
             </span>
-            <p className="mt-7 md:mt-5 text-4xl">
+            <p className="mt-7 md:mt-5 text-3xl md:text-4xl">
             <span className=" text-pblue font-bold">Abacus,</span> the Accounting
             Software to manage your business
             </p>
@@ -24,8 +23,10 @@ const Landing = () => {
             <div className='mt-5 block' >
                 <Mailchimp />
             </div>
-            <div className='hidden md:flex md:flex-col md:items-center text-center md:mt-40 md:ml-80 leading-6' >
-                <a href='#offer'>SCROLL DOWN</a>
+            <div className=' transition-all hidden md:flex md:flex-col md:items-center text-center md:mt-36 md:ml-80 leading-6'
+             >
+                
+                <a href='#offer' className='transition-all'>SCROLL DOWN</a>
                 <a href='#offer' ><img src={Angle} alt='angle arrow'></img></a>
             </div>
         </div>
@@ -33,13 +34,13 @@ const Landing = () => {
             <img src={Girl} alt="A girl with her laptop" className='hidden md:block rounded-xl h-5/6' ></img>
             <img src={MobileGirl} alt="A girl with her laptop" className='block md:hidden rounded-none md:rounded-lg w-full' ></img>
         </div>
-        <div className='flex flex-col items-center md:hidden text-center mt-6 leading-6' >
+        <div className=' flex flex-col items-center md:hidden text-center mt-6 leading-6' >
             <a href='#offer'>SCROLL DOWN</a>
             <a href='#offer' ><img src={Angle} alt='angle arrow'></img></a>
         </div>
     </main>
-    <section id='offer' className='container mt-14 text-pblue px-5 text-sm md:text-base md:px-24'>
-        <h3 className='font-medium'>WHAT WE OFFER</h3>
+    <section id='offer' className=' container mt-14 text-pblue px-5 text-sm md:text-base md:px-24'>
+        <h3 className='font-medium text-lg'>WHAT WE OFFER</h3>
             <div className='block md:flex text-justify md:items-center mt-14'>
                 <div className='md:w-1/2 flex justify-end md:block'>
                     <img src={Girl} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
