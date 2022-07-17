@@ -16,6 +16,7 @@ module.exports = {
         inbetweenGray: "#656565",
         lightGray: "#F6F2FF",
         lemon: "#22C55E",
+        toggleColor: "#6D7280",
       },
     },
   },
