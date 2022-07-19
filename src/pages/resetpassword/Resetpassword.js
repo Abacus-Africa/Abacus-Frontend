@@ -1,5 +1,5 @@
 import {
-    Box,
+  Box,
   Button,
   Card,
   CardActions,
@@ -8,58 +8,119 @@ import {
 } from "@mui/material";
 import React from "react";
 // import Nav from "../../components/nav/Nav";
-import './Resetpassword.css'
+import { Formik } from "formik";
+import * as Yup from "yup";
+import "./Resetpassword.css";
 
 const Resetpassword = () => {
   return (
     <>
-    {/* <Nav /> */}
-    <div className="reset-password-wrapper">
-      <Card
-        sx={{  minWidth: { sm:350 , md:450 },  background: "#160051", padding: "40px 40px" }}
-        className="reset-password-card"
-      >
-        <CardContent
+      {/* <Nav /> */}
+      <div className="reset-password-wrapper">
+        <Card
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
+            minWidth: { sm: 350, md: 450 },
+            background: "#160051",
+            padding: "40px 40px",
           }}
-          className="reset-password-card-content"
+          className="reset-password-card"
         >
-          <Typography
-            sx={{ fontSize: 27, fontWeight: 500 }}
-            variant="h2"
-            color="text.secondary"
-            gutterBottom
+          <CardContent
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+            className="reset-password-card-content"
           >
-            Reset Password
-          </Typography>
+            <Typography
+              sx={{ fontSize: 27, fontWeight: 500 }}
+              variant="h2"
+              color="text.secondary"
+              gutterBottom
+            >
+              Reset Password
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Formik
+              initialValues={{
+                name: "",
+                email: "",
+                password: "",
+                confirmpassword: "",
+              }}
+              // onSubmit={async (values) => {
+              //   const body = {
+              //     name: values.name,
+              //     email: values.email,
+              //   };
 
-        </CardContent>
-        <CardActions>
-          <form>
-            <label>create new password</label>
-            <input
-              type="password"
-              placeholder="Enter new password"
-            ></input>
+              // alert(JSON.stringify(body));
+              // }}
+              validationSchema={Yup.object({
+                password: Yup.string().required("password is required"),
+                confirmpassword: Yup.string()
+                  .required("you need to renter your password")
+                  .oneOf([Yup.ref("password"), null], "Passwords must match"),
+              })}
+            >
+              {({
+                values,
+                errors,
+                touched,
+                handleChange,
+                handleBlur,
+                handleSubmit,
+              }) => (
+                <form onSubmit={handleSubmit}>
+                  <label>create new password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.password}
+                    className={
+                      touched.password && errors.password ? "info-error" : null
+                    }
+                    placeholder="Enter your password"
+                  />
+                  {errors.password && touched.password && (
+                    <span className="error">{errors.password}</span>
+                  )}
 
-            <label>confirm password</label>
-            <input
-              type="password"
-              placeholder="Re-enter new password"
-            ></input>
+                  <label>confirm password</label>
+                  <input
+                    type="password"
+                    id="confirmpassword"
+                    name="confirmpassword"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.confirmpassword}
+                    className={
+                      touched.confirmpassword && errors.confirmpassword
+                        ? "info-error"
+                        : null
+                    }
+                    placeholder="Re-enter your password"
+                  />
+                  {errors.confirmpassword && touched.confirmpassword && (
+                    <span className="error">{errors.confirmpassword}</span>
+                  )}
 
-            <Box>
-              <Button variant="outlined">continue</Button>
-            </Box>
-          </form>
-        </CardActions>
-      </Card>
-    </div>
-  </>
-  )
-}
+                  <Box>
+                    <Button variant="outlined">continue</Button>
+                  </Box>
+                </form>
+              )}
+            </Formik>
+          </CardActions>
+        </Card>
+      </div>
+    </>
+  );
+};
 
-export default Resetpassword
+export default Resetpassword;

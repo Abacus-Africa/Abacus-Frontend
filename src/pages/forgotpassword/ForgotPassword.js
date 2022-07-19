@@ -1,5 +1,5 @@
 import {
-    Box,
+  Box,
   Button,
   Card,
   CardActions,
@@ -10,7 +10,8 @@ import React from "react";
 // import Nav from "../../components/nav/Nav";
 import "./ForgotPassword.css";
 import { Link } from "react-router-dom";
-
+import { Formik } from "formik";
+import * as Yup from "yup";
 
 const ForgotPassword = () => {
   return (
@@ -18,7 +19,11 @@ const ForgotPassword = () => {
       {/* <Nav /> */}
       <div className="forgot-password-wrapper">
         <Card
-          sx={{  minWidth: { sm:350 , md:450 },  background: "#160051", padding: "40px 10px" }}
+          sx={{
+            minWidth: { sm: 350, md: 450 },
+            background: "#160051",
+            padding: "40px 10px",
+          }}
           className="forgot-password-card"
         >
           <CardContent
@@ -44,19 +49,58 @@ const ForgotPassword = () => {
             </Typography>
           </CardContent>
           <CardActions>
-            <form>
-              <label>Email Address</label>
-              <input
-                type="email"
-                placeholder="Enter your email address"
-              ></input>
+            <Formik
+              initialValues={{
+                email: "",
+              }}
+              validationSchema={Yup.object({
+                email: Yup.string()
+                  .required("email is required")
+                  .email("invalid email address"),
+              })}
 
-              <Box>
-               <Link to='/resetpassword'>
-                <Button variant="outlined">continue</Button>
-               </Link>
-              </Box>
-            </form>
+              // onSubmit={async (values) =>{
+              //   const body ={
+              //     email:values.email,
+              //     password:values.password
+              //   }
+              //   alert(JSON.stringify(body))
+              // }}
+            >
+              {({
+                values,
+                errors,
+                touched,
+                handleChange,
+                handleBlur,
+                handleSubmit,
+              }) => (
+                <form onSubmit={handleSubmit}>
+                  <label>Email Address</label>
+                  <input
+                     type="email"
+                     id="email"
+                     name="email"
+                     onChange={handleChange}
+                     onBlur={handleBlur}
+                     value={values.email}
+                     className={
+                       touched.email && errors.email ? "pass-error" : null
+                     }
+                     placeholder="Enter your email address"
+                  />
+                     {errors.email && touched.email && (
+                      <span className="error">{errors.email}</span>
+                    )}
+
+                  <Box>
+                    <Link to="/resetpassword">
+                      <Button variant="outlined">continue</Button>
+                    </Link>
+                  </Box>
+                </form>
+              )}
+            </Formik>
           </CardActions>
         </Card>
       </div>
