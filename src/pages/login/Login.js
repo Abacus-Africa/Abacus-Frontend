@@ -15,11 +15,13 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 import google from './../../assets/icons/Google Icon.svg'
 import apple from './../../assets/icons/Apple Icon.svg'
+import Nav from "../../components/nav/Nav";
 
 
 const Login = () => {
   return (
     <>
+    <Nav />
       <div className="login_wrapper">
         <div className="login_side_image">
           <img src={girl} alt="girl" />
@@ -117,7 +119,7 @@ const Login = () => {
                   </Box>
 
                   <Box className="btn-wrapper ">
-                    <Button variant="outlined" type='submit'>Log In</Button>
+                  <Link to='/mainpage'>  <Button variant="outlined" type='submit'>Log In</Button> </Link>
                     <Typography variant="h6">Or</Typography>
                     <Box>
                       <Button variant="contained">

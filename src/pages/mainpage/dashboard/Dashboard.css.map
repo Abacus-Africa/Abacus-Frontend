@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "MainNav.scss"
+        "Dashboard.scss"
     ],
     "names": [],
-    "file": "MainNav.css"
+    "file": "Dashboard.css"
 }
