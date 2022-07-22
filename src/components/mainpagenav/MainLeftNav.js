@@ -15,7 +15,7 @@ import { Box } from "@mui/material";
 
 const MainLeftNav = () => {
   return (
-    <Box sx={{ display: { sm: "none", md: "flex" } }} className="mainpage-nav">
+    <Box sx={{ display: { xs: "none", md: "flex" } }} className="mainpage-nav">
       <div>
         <div className="mainpage-logo">
           <img src={Logo} alt="logo" />

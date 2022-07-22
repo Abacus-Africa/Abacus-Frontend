@@ -1,0 +1,108 @@
+@mixin fonts($f, $s, $w, $size, $c) {
+  font-family: $f;
+  font-style: $s;
+  font-weight: $w;
+  font-size: $size;
+  color: $c;
+}
+@mixin color($col) {
+  @if $col == high {
+    color: #15803d;
+  } @else {
+    color: #dc2626;
+  }
+}
+.dashboard {
+  margin: 40px 20px 0px 20px;
+  .dashboard-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .dashboard-top-greeting {
+      .greeting-name {
+        @include fonts(Poppins, normal, 500, 33px, #080e19);
+      }
+      .greeting-text {
+        @include fonts(Poppins, normal, 400, 14px, #000000);
+      }
+    }
+    .dashboard-top-icons {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        width: 24px;
+        margin: 0px 5px;
+      }
+    }
+  }
+  .dashboard-card {
+    width: 100%;
+    margin: 30px 0px;
+    .card-wrapper {
+      background: #ffffff;
+      border: 1px solid #e7e8f2;
+      border-radius: 10px;
+      margin: 0px !important;
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px 24px;
+      height: 143.36px;
+      .card-title {
+        @include fonts(Poppins, normal, 400, 16px, #080e19);
+      }
+      .card-value {
+        .card-cash {
+          @include fonts(Poppins, normal, 600, 24px, #35197f);
+          margin-right: 10px;
+        }
+        .increase {
+          @include fonts(Poppins, normal, 400, 14px, #35197f);
+          @include color(high);
+        }
+        .decrease {
+          @include fonts(Poppins, normal, 400, 14px, #35197f);
+          @include color(low);
+        }
+      }
+      .card-comparison {
+        @include fonts(Poppins, normal, 300, 12.7648px, #000000);
+      }
+    }
+  }
+  .dashboard-reports-analytics {
+    .wrapper {
+      background: #ffffff;
+      border: 1px solid #e7e8f2;
+      border-radius: 10px;
+      margin: 0px !important;
+      width: 100%;
+      height: 299px;
+      padding: 16px 24px;
+      .reports-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .reports-text {
+          @include fonts(Poppins, normal, 600, 20px, #080e19);
+        }
+      }
+      .reports-chart {
+        img {
+          width: 750px;
+          height: 194px;
+        }
+      }
+      .pie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 150.1px;
+            margin-top: 10px;
+        }
+      }
+    }
+  }
+}
