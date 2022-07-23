@@ -1,4 +1,3 @@
-// import ComingSoon from "./pages/comingsoon/ComingSoon";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
@@ -6,7 +5,6 @@ import ForgotPassword from "./pages/forgotpassword/ForgotPassword";
 import Resetpassword from "./pages/resetpassword/Resetpassword";
 import Landing from "./pages/landing/Landing";
 import Pricing from "./components/pricing";
-import Nav from "./components/nav/Nav";
 import Mainpage from "./pages/mainpage/Mainpage";
 import Dashboard from "./pages/mainpage/dashboard/Dashboard";
 
@@ -16,7 +14,6 @@ function App(props) {
   return (
     <div>
       <Router>
-        {/* <Nav /> */}
         <Routes>
           <Route path='/' element={<Landing />} ></Route>
           <Route path='login' element={<Login />} ></Route>
