@@ -1,0 +1,313 @@
+.dashboard {
+  margin: 40px 20px 0px 20px;
+}
+
+.dashboard .dashboard-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.dashboard .dashboard-top .dashboard-top-greeting .greeting-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  color: #080e19;
+}
+
+.dashboard .dashboard-top .dashboard-top-greeting .greeting-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+
+.dashboard .dashboard-top .dashboard-top-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.dashboard .dashboard-top .dashboard-top-icons img {
+  width: 24px;
+  margin: 0px 5px;
+}
+
+.dashboard .dashboard-card {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.dashboard .dashboard-card .card-wrapper {
+  background: #ffffff;
+  border: 1px solid #e7e8f2;
+  border-radius: 10px;
+  margin: 0px !important;
+  width: 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 24px;
+  height: 143.36px;
+}
+
+.dashboard .dashboard-card .card-wrapper .card-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #080e19;
+}
+
+.dashboard .dashboard-card .card-wrapper .card-value .card-cash {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #35197f;
+  margin-right: 10px;
+}
+
+.dashboard .dashboard-card .card-wrapper .card-value .increase {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #35197f;
+  color: #15803d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard .dashboard-card .card-wrapper .card-value .decrease {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #35197f;
+  color: #dc2626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard .dashboard-card .card-wrapper .card-comparison {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12.7648px;
+  color: #000000;
+}
+
+.dashboard .dashboard-reports-analytics {
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.dashboard .dashboard-reports-analytics .wrapper {
+  background: #ffffff;
+  border: 1px solid #e7e8f2;
+  border-radius: 10px;
+  margin: 0px !important;
+  width: 100%;
+  height: 299px;
+  padding: 16px 24px;
+}
+
+.dashboard .dashboard-reports-analytics .wrapper .reports-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dashboard .dashboard-reports-analytics .wrapper .reports-top img {
+  cursor: pointer;
+}
+
+.dashboard .dashboard-reports-analytics .wrapper .reports-top .reports-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #080e19;
+}
+
+.dashboard .dashboard-reports-analytics .wrapper .reports-chart img {
+  width: 750px;
+  height: 194px;
+}
+
+.dashboard .dashboard-reports-analytics .wrapper .pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard .dashboard-reports-analytics .wrapper .pie img {
+  width: 150.1px;
+  margin-top: 10px;
+}
+
+.dashboard .transactions {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.dashboard .transactions .transactions-wrapper {
+  background: #ffffff;
+  border: 1px solid #e7e8f2;
+  border-radius: 10px;
+  margin: 0px !important;
+  width: 100%;
+}
+
+.dashboard .transactions .transactions-wrapper .transactions-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  padding: 16px 24px 0px 24px;
+}
+
+.dashboard .transactions .transactions-wrapper .transactions-top .transactions-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #080e19;
+}
+
+.dashboard .transactions .transactions-wrapper .transactions-top .transactions-drop-downs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .transactions .transactions-wrapper .transactions-top .transactions-drop-downs .drops {
+  height: 40px;
+  border-radius: 6px;
+}
+
+.dashboard .transactions .transactions-wrapper .transactions-heading {
+  padding: 0px 24px 0px 24px;
+}
+
+.dashboard .transactions .transactions-wrapper .transactions-heading .transactions-heading-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #080e19;
+}
+
+.dashboard .transactions .transactions-wrapper .divider {
+  margin: 10px 0px 10px 0px;
+}
+
+.dashboard .transactions .transactions-wrapper .transaction-values {
+  padding: 0px 24px 0px 24px;
+}
+
+.dashboard .transactions .transactions-wrapper .transaction-values .transaction-values-details {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dashboard .transactions .transactions-wrapper .transaction-values .transaction-values-details .details-value {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #080e19;
+  margin: 11px 0px;
+}
+
+.dashboard .transactions .transactions-wrapper .transaction-values .transaction-values-details .details-status {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #080e19;
+  margin: 10px 0px;
+  padding: 4px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 101px;
+  height: 32px;
+  border-radius: 20px;
+}
+
+.dashboard .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard .pagination .pagination-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #080e19;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=Dashboard.css.map */

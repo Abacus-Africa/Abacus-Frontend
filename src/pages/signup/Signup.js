@@ -15,10 +15,12 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 import google from './../../assets/icons/Google Icon.svg'
 import apple from './../../assets/icons/Apple Icon.svg'
+import Nav from "../../components/nav/Nav";
 
 const Signup = () => {
   return (
     <>
+    <Nav />
       <div className="signup_wrapper">
         <div className="signup_side_image">
           
@@ -154,7 +156,7 @@ const Signup = () => {
                   </Box>
 
                   <Box className="btn-wrapper ">
-                    <Button variant="outlined" type='submit'>Sign Up</Button>
+                   <Link to='/mainpage/dashboard'> <Button variant="outlined" type='submit'>Sign Up</Button> </Link>
                     <Typography variant="h6">Or</Typography>
                     <Box>
                       <Button variant="contained">

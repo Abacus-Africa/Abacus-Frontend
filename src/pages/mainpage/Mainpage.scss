@@ -1,0 +1,9 @@
+.mainpage{
+    width: 100%;
+    display: flex;
+    .mainpage-outlet{
+        min-height: 100vh;
+        background: rgba(229, 231, 235, 1);
+    }
+}
+

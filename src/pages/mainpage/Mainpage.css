@@ -1,0 +1,12 @@
+.mainpage {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainpage .mainpage-outlet {
+  min-height: 100vh;
+  background: #e5e7eb;
+}
+/*# sourceMappingURL=Mainpage.css.map */

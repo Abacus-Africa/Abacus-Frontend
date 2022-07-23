@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-// import Nav from "../../components/nav/Nav";
+import Nav from "../../components/nav/Nav";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import "./Resetpassword.css";
@@ -15,7 +15,7 @@ import "./Resetpassword.css";
 const Resetpassword = () => {
   return (
     <>
-      {/* <Nav /> */}
+      <Nav />
       <div className="reset-password-wrapper">
         <Card
           sx={{

@@ -6,10 +6,12 @@ import Angle from "../../assets/images/downangle.svg"
 // import Nav from '../../components/nav/Nav'
 import Pricing from '../../components/pricing'
 import Footer from '../../components/footer'
+import Nav from '../../components/nav/Nav'
 
 const Landing = () => {
   return (
     <>
+    <Nav />
     <main className="block md:flex md:container text-pblue mt-16 md:mt-28 md:px-24">
         <div className='md:w-3/4 px-10 md:px-0 md:container text-left font-medium mb-10 md:mb-0 md:mt-28 md:pr-20'>
             <span className="bg-plightviolet text-pviolet rounded-full p-2">

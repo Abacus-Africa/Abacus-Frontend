@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-// import Nav from "../../components/nav/Nav";
+import Nav from "../../components/nav/Nav";
 import "./ForgotPassword.css";
 import { Link } from "react-router-dom";
 import { Formik } from "formik";
@@ -16,7 +16,7 @@ import * as Yup from "yup";
 const ForgotPassword = () => {
   return (
     <>
-      {/* <Nav /> */}
+      <Nav />
       <div className="forgot-password-wrapper">
         <Card
           sx={{
