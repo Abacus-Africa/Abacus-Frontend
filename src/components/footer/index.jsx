@@ -1,12 +1,9 @@
 import React from 'react'
 import Logo from "../../assets/images/Abacus_7-transformed 1.svg"
 import Instagram from "../../assets/images/Insta.svg"
-import Whatsapp from "../../assets/images/whatsapp.svg"
 import Twitter from "../../assets/images/twitter.svg"
 import Linkedin from "../../assets/images/linked.svg"
 import Facebook from "../../assets/images/facebok.svg"
-import Youtube from "../../assets/images/youtube.svg"
-import Phone from "../../assets/images/phone.svg"
 import FooterChimp from "../../components/mailchimp/FooterChimp"
 
 const Footer = () => {
@@ -52,35 +49,18 @@ const Footer = () => {
                     >
                     <img src={Facebook} alt='instagram'></img>
                     </a>
-                    <a
-                    href="https://www.facebook.com/AbacusAfrica?_rdc=1&_rdr"
-                    target="blank"
-                    >
-                    <img src={Youtube} alt='youtube'></img>
-                    </a>
-                    <a
-                    href="https://www.facebook.com/AbacusAfrica?_rdc=1&_rdr"
-                    target="blank"
-                    >
-                    <img src={Whatsapp} alt='whatsapp'></img>
-                    </a>
-                    <a
-                    href="https://www.facebook.com/AbacusAfrica?_rdc=1&_rdr"
-                    target="blank"
-                    >
-                    <img src={Phone} alt='phone'></img>
-                    </a>
+
                 </div>
                 <p className='mb-5'>Get updates on offers, new features and discounts.</p>
                 <div className='text-black'>
                     <div className='flex flex-col'>
-                        <label for="name">First Name</label>
+                        <label for="name" className='text-white'>First Name</label>
                         <input type='text' id="name"
                         name="name"
                         required placeholder='First name' className='outline-none placeholder:text-pblack py-2 px-3 rounded-lg mt-1'></input>
                     </div>
                     <div className='flex flex-col mt-3'>
-                        <label>Email Address</label>
+                        <label className='text-white'>Email Address</label>
                         <FooterChimp />
                     </div>
                 </div>

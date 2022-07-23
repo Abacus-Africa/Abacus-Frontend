@@ -1,7 +1,7 @@
 import React from 'react'
 import Tick from '../../assets/images/tick.svg'
 
-const Monthly = ({standard = 20, premium = 144, display = 'hidden'}) => {
+const Monthly = ({standard = 6, premium = 10, display = 'hidden'}) => {
   return (
     <div className='container flex flex-wrap justify-center gap-7 md:gap-16 items-center'>
     <div className='bg-white flex flex-col items-center p-4 rounded-xl shadow-lg md:h-3/4'>

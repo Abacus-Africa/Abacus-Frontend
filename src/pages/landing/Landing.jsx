@@ -1,9 +1,11 @@
 import React from 'react'
 import Girl from "../../assets/images/girl.png"
 import MobileGirl from "../../assets/images/mobileGirl.svg"
+import Dashboard from "../../assets/images/landing-dashboard.svg"
+import customer from "../../assets/images/customer.svg"
+import inventory from "../../assets/images/inventory.svg"
 import Mailchimp from '../../components/mailchimp/Mailchimp'
 import Angle from "../../assets/images/downangle.svg"
-// import Nav from '../../components/nav/Nav'
 import Pricing from '../../components/pricing'
 import Footer from '../../components/footer'
 import Nav from '../../components/nav/Nav'
@@ -45,7 +47,7 @@ const Landing = () => {
         <h3 className='font-medium text-lg'>WHAT WE OFFER</h3>
             <div className='block md:flex text-justify md:items-center mt-14'>
                 <div className='md:w-1/2 flex justify-end md:block'>
-                    <img src={Girl} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
+                    <img src={Dashboard} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
                 </div>
                 <div className='md:w-1/2'>
                     <h2 className='font-extrabold text-3xl'>All-inclusive Dashboard</h2>
@@ -66,7 +68,7 @@ const Landing = () => {
             </div>
             <div className='block md:flex justify-center text-justify items-center mt-10'>
                 <div className='md:w-1/2 flex justify-end md:block'>
-                    <img src={Girl} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
+                    <img src={customer} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
                 </div>
                 <div className='md:w-1/2'>
                     <h2 className='font-extrabold text-3xl'>Customer Management</h2>
@@ -75,14 +77,14 @@ const Landing = () => {
             </div>
             <div className='block md:flex justify-center text-justify items-center mt-10'>
                 <div className='md:hidden'>
-                    <img src={Girl} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
+                    <img src={inventory} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
                 </div>
                 <div className='md:w-1/2'>
                     <h2 className='font-extrabold text-3xl'>Inventory Management</h2>
                     <p>Organize and keep track of your stocks for a seamless replenishment. Minimize inventory loss by staying up to date with damaged goods, loss or theft. Determine the volume of sales by identifying highest selling products to the lowest.</p>
                 </div>
                 <div className='md:w-1/2 md:flex md:justify-end hidden'>
-                    <img src={Girl} alt='girl' className='w-1/2 rounded-xl'></img>
+                    <img src={inventory} alt='girl' className='w-1/2 rounded-xl'></img>
                 </div>
             </div>
         <p className='font-medium mt-16 mb-6'>CHOOSE WHAT WORKS FOR YOUR BUSINESS</p>
