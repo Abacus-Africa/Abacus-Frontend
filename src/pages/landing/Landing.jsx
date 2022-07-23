@@ -50,8 +50,8 @@ const Landing = () => {
                     <img src={Dashboard} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
                 </div>
                 <div className='md:w-1/2'>
-                    <h2 className='font-extrabold text-3xl'>All-inclusive Dashboard</h2>
-                    <p>Get access to an all-in-one platform to manage your expenses and cash flows, record sales, bookkeeping and lots more. Keep track of your transactions, profit and sales in real time from anywhere.</p>
+                    <h2 className='font-extrabold text-2xl mb-5'>All-inclusive Dashboard</h2>
+                    <p className='leading-6'>Get access to an all-in-one platform to manage your expenses and cash flows, record sales, bookkeeping and lots more. Keep track of your transactions, profit and sales in real time from anywhere.</p>
                 </div>
             </div>
             <div className='block md:flex text-justify md:items-center mt-10'>
@@ -59,8 +59,8 @@ const Landing = () => {
                     <img src={Girl} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
                 </div>
                 <div className='md:w-1/2'>
-                    <h2 className='font-extrabold text-3xl'>Financial Reports</h2>
-                    <p>Business reporting at its best. Get access to monthly, quarterly, and yearly financial statements. Keep track of all activities and grow your business.</p>
+                    <h2 className='font-extrabold text-2xl mb-5'>Financial Reports</h2>
+                    <p className='leading-6'>Business reporting at its best. Get access to monthly, quarterly, and yearly financial statements. Keep track of all activities and grow your business.</p>
                 </div>
                 <div className='md:w-1/2 md:flex md:justify-end hidden'>
                     <img src={Girl} alt='girl' className='w-1/2 rounded-xl'></img>
@@ -71,8 +71,8 @@ const Landing = () => {
                     <img src={customer} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
                 </div>
                 <div className='md:w-1/2'>
-                    <h2 className='font-extrabold text-3xl'>Customer Management</h2>
-                    <p>Upload your customer data to your store for easy business management and better customer engagement. Keep track of your customer purchasing records for loyalty and discounts offers.</p>
+                    <h2 className='font-extrabold text-2xl mb-5'>Customer Management</h2>
+                    <p className='leading-6'>Upload your customer data to your store for easy business management and better customer engagement. Keep track of your customer purchasing records for loyalty and discounts offers.</p>
                 </div>
             </div>
             <div className='block md:flex justify-center text-justify items-center mt-10'>
@@ -80,8 +80,8 @@ const Landing = () => {
                     <img src={inventory} alt='girl' className='w-1/2 rounded-xl mb-5 md:mb-0'></img>
                 </div>
                 <div className='md:w-1/2'>
-                    <h2 className='font-extrabold text-3xl'>Inventory Management</h2>
-                    <p>Organize and keep track of your stocks for a seamless replenishment. Minimize inventory loss by staying up to date with damaged goods, loss or theft. Determine the volume of sales by identifying highest selling products to the lowest.</p>
+                    <h2 className='font-extrabold text-2xl mb-5' >Inventory Management</h2>
+                    <p className='leading-6'>Organize and keep track of your stocks for a seamless replenishment. Minimize inventory loss by staying up to date with damaged goods, loss or theft. Determine the volume of sales by identifying highest selling products to the lowest.</p>
                 </div>
                 <div className='md:w-1/2 md:flex md:justify-end hidden'>
                     <img src={inventory} alt='girl' className='w-1/2 rounded-xl'></img>

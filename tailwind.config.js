@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         pblack: "#0E0033",
         pblue: "#160051",
+        notifyBlue: "#4B29A6",
         lightBlue: "#4B29A6",
         pviolet: "#e758d4",
         purple: "#E758D7",
