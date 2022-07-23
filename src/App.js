@@ -21,9 +21,8 @@ function App(props) {
           <Route path='forgotpassword' element={<ForgotPassword />} ></Route>
           <Route path='resetpassword' element={<Resetpassword />} ></Route>
           <Route path='pricing' element={<Pricing />} ></Route>
-      
           <Route path='mainpage' element={<Mainpage />} >
-            <Route path='dashboard' element={<Dashboard />} />
+          <Route path='dashboard' element={<Dashboard />} />
           </Route>
         </Routes>
       </Router>
