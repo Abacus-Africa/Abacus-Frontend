@@ -226,33 +226,33 @@ const Dashboard = () => {
               </Box>
               <Grid container className='transaction-values'>
                 <Grid item xs={3} md={2} className='transaction-values-details' sx={{display:'flex'}}>
-                  { transactionDates.map((item)=>{
+                  { transactionDates.map((item,index)=>{
                     return (
-                      <Typography variant='p' className='details-value'>{item}</Typography>
+                      <Typography key={index} variant='p' className='details-value'>{item}</Typography>
                     )
                   }) }
                 </Grid>
 
                 <Grid item xs={3} md={2} className='transaction-values-details' sx={{display:'flex'}}>
-                  { transactionId.map((item)=>{
+                  { transactionId.map((item,index)=>{
                     return (
-                      <Typography variant='p' className='details-value'>{item}</Typography>
+                      <Typography key={index} variant='p' className='details-value'>{item}</Typography>
                     )
                   }) }
                 </Grid>
 
                 <Grid item xs={3} md={2} className='transaction-values-details' sx={{display:'flex'}}>
-                  { transactionValue.map((item)=>{
+                  { transactionValue.map((item,index)=>{
                     return (
-                      <Typography variant='p' className='details-value'>{item}</Typography>
+                      <Typography key={index} variant='p' className='details-value'>{item}</Typography>
                     )
                   }) }
                 </Grid>
 
                 <Grid item xs={3} md={2} className='transaction-values-details'>
-                  { transactionStatus.map((item)=>{
+                  { transactionStatus.map((item,index)=>{
                     return (
-                      <Typography variant='p' className='details-status' sx={{
+                      <Typography key={index} variant='p' className='details-status' sx={{
                         background : item === 'Completed' ? "#15803D" : item === "Pending" ? "#F38A20" : "#DC2626" , display:'flex'
                       }}>{item}</Typography>
                     )
@@ -260,9 +260,9 @@ const Dashboard = () => {
                 </Grid>
 
                 <Grid item  md={4} className='transaction-values-details' sx={{display: {xs:'none', md:'flex'} }} >
-                  { transactionDescription.map((item)=>{
+                  { transactionDescription.map((item,index)=>{
                     return (
-                      <Typography variant='p' className='details-value'>{item}</Typography>
+                      <Typography key={index} variant='p' className='details-value'>{item}</Typography>
                     )
                   }) }
                 </Grid>
