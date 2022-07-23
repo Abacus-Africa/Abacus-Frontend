@@ -55,12 +55,12 @@ const Nav = () => {
               [
                 "Log In",
                 "/login",
-                "text-pblue border border-pblue rounded w-20 py-2",
+                "text-pblue border font-semibold border-pblue rounded-lg w-20 py-2",
               ],
               [
                 "Sign Up",
                 "/signup",
-                "text-pviolet border border-pviolet rounded w-32 py-2",
+                "text-pviolet border font-semibold border-pviolet rounded-lg w-32 py-2",
               ],
             ].map(([title, url, style], index) => (
               <a href={url} className={style} key={index} >
