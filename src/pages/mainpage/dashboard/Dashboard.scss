@@ -60,10 +60,12 @@
         .increase {
           @include fonts(Poppins, normal, 400, 14px, #35197f);
           @include color(high);
+          display: flex;
         }
         .decrease {
           @include fonts(Poppins, normal, 400, 14px, #35197f);
           @include color(low);
+          display: flex;
         }
       }
       .card-comparison {
@@ -72,6 +74,8 @@
     }
   }
   .dashboard-reports-analytics {
+    margin: 30px 0px;
+    width: 100%;
     .wrapper {
       background: #ffffff;
       border: 1px solid #e7e8f2;
@@ -84,6 +88,9 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        img {
+          cursor: pointer;
+        }
         .reports-text {
           @include fonts(Poppins, normal, 600, 20px, #080e19);
         }
@@ -94,15 +101,91 @@
           height: 194px;
         }
       }
-      .pie{
+      .pie {
         display: flex;
         flex-direction: column;
         align-items: center;
-        img{
-            width: 150.1px;
-            margin-top: 10px;
+        img {
+          width: 150.1px;
+          margin-top: 10px;
         }
       }
+    }
+  }
+  .transactions {
+    width: 100%;
+    margin: 30px 0px;
+    .transactions-wrapper {
+      background: #ffffff;
+      border: 1px solid #e7e8f2;
+      border-radius: 10px;
+      margin: 0px !important;
+      width: 100%;
+      .transactions-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 16px 24px 0px 24px;
+        .transactions-title {
+          @include fonts(Poppins, normal, 600, 20px, #080e19);
+        }
+        .transactions-drop-downs {
+          display: flex;
+          justify-content: space-between;
+          .drops {
+            height: 40px;
+            border-radius: 6px;
+          }
+        }
+      }
+      .transactions-heading {
+        padding: 0px 24px 0px 24px;
+
+        .transactions-heading-title {
+        //   display: flex;
+          align-items: center;
+          @include fonts(Open Sans, normal, 400, 14px, #080e19);
+        }
+      }
+      .divider {
+        margin: 10px 0px 10px 0px;
+      }
+      .transaction-values {
+        padding: 0px 24px 0px 24px;
+        .transaction-values-details {
+        //   display: flex;
+          flex-direction: column;
+          .details-value {
+            @include fonts("Open Sans", normal, 400, 14px, #080e19);
+            margin: 11px 0px;
+          }
+          .details-status {
+            @include fonts("Open Sans", normal, 400, 14px, #080e19);
+            margin: 10px 0px;
+            padding: 4px 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 101px;
+            height: 32px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    margin-bottom: 30px;
+    .pagination-text {
+      @include fonts("Open Sans", normal, 400, 14px, #080e19);
+      margin-top: 30px;
     }
   }
 }

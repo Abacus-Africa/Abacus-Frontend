@@ -1,6 +1,6 @@
 import React from "react";
 import Dialog from "@mui/material/Dialog";
-import { AppBar, Box, IconButton, Slide, Toolbar } from "@mui/material";
+import {  Box, IconButton, Slide,  } from "@mui/material";
 import "./navSlide.scss";
 import { NavLink } from "react-router-dom";
 import customer from "../../assets/icons/customer.svg";
