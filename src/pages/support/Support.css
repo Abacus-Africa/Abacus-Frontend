@@ -1,0 +1,132 @@
+.support-body {
+  background: #ece5ff;
+  padding-top: 20px;
+}
+.support-body .faq-top {
+  background: #f6f2ff;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.support-body .faq-top .faq-text-one {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.support-body .faq-top .faq-text-two {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.support-body .faq-top .faq-text-two a {
+  color: #e862d7;
+}
+.support-body .faq-top .faq-search {
+  margin: 30px 0px 10px 0px;
+}
+.support-body .faq-top .faq-search .icon {
+  padding: 10px;
+  min-width: 40px;
+  position: absolute;
+}
+.support-body .faq-top .faq-search .input-field {
+  padding: 0px 35px;
+  width: 215.03px;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.support-body .faq-top .faq-search .input-field::-moz-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.support-body .faq-top .faq-search .input-field:-ms-input-placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.support-body .faq-top .faq-search .input-field::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.support-body .faq-top .faq-search .input-field:focus {
+  outline: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.179);
+}
+.support-body .faq-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.support-body .faq-body .faq-body-top {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000000;
+  margin: 30px 0px;
+  text-align: center;
+}
+.support-body .faq-body .faq-body-box {
+  width: 80%;
+  margin-bottom: 100px;
+}
+.support-body .faq-body .faq-body-box .faq-list {
+  width: 100%;
+}
+.support-body .faq-body .faq-body-box .faq-list .faq-list-item {
+  background: #270b73;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  min-height: 64px;
+}
+
+@media (max-width: 900px) {
+  .support-body .faq-top .faq-text-one {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+  }
+  .support-body .faq-top .faq-text-two {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+  }
+  .support-body .faq-body .faq-body-top {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+  }
+  .support-body .faq-body .faq-body-box .faq-list .faq-list-item {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+  }
+}/*# sourceMappingURL=Support.css.map */

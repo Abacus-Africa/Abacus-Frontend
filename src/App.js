@@ -7,6 +7,9 @@ import Landing from "./pages/landing/Landing";
 import Pricing from "./components/pricing";
 import Mainpage from "./pages/mainpage/Mainpage";
 import Dashboard from "./pages/mainpage/dashboard/Dashboard";
+import Support from "./pages/support/Support";
+import PasswordChanged from "./pages/passwordChanged/PasswordChanged";
+import ContactUs from "./pages/contactUs/ContactUs";
 
 function App(props) {
   
@@ -20,9 +23,13 @@ function App(props) {
           <Route path='signup' element={<Signup />} ></Route>
           <Route path='forgotpassword' element={<ForgotPassword />} ></Route>
           <Route path='resetpassword' element={<Resetpassword />} ></Route>
+          <Route path='passwordchanged' element={<PasswordChanged />} ></Route>
           <Route path='pricing' element={<Pricing />} ></Route>
+          <Route path='support' element={<Support />}></Route>
+          <Route path='contact' element={<ContactUs />}></Route>
+         
           <Route path='mainpage' element={<Mainpage />} >
-          <Route path='dashboard' element={<Dashboard />} />
+             <Route path='dashboard' element={<Dashboard />} />
           </Route>
         </Routes>
       </Router>

@@ -19,7 +19,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center mt-8 md:mt-5 ml-10 md:ml-32 md:mr-10 nav-heading text-pblue">
+      <div className="flex justify-between items-center  p-2 ml-10 md:ml-32 md:mr-10 nav-heading text-pblue">
         <div>
           <a href="/">
             <img src={Logo} alt="abacus logo"></img>
@@ -34,7 +34,7 @@ const Nav = () => {
           <nav className="flex p-3 space-x-6 font-medium" style={{alignItems:'center'}}>
             {[
               ["Home", "/"],
-              ["Support", "/"],
+              ["Support", "/support"],
               ["Blog", "https://abacusafrica.hashnode.dev/"],
               ["Pricing", "/pricing"],
             ].map(([title, url], index) => (

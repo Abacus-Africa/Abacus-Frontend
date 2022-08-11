@@ -11,6 +11,7 @@ import Nav from "../../components/nav/Nav";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import "./Resetpassword.css";
+import { Link } from "react-router-dom";
 
 const Resetpassword = () => {
   return (
@@ -19,7 +20,7 @@ const Resetpassword = () => {
       <div className="reset-password-wrapper">
         <Card
           sx={{
-            minWidth: { sm: 350, md: 450 },
+            // minWidth: { sm: 350, md: 450 },
             background: "#160051",
             padding: "40px 40px",
           }}
@@ -111,7 +112,9 @@ const Resetpassword = () => {
                   )}
 
                   <Box>
+                  <Link to="/passwordchanged">
                     <Button variant="outlined">continue</Button>
+                    </Link>
                   </Box>
                 </form>
               )}

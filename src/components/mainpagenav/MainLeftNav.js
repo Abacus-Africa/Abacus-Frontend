@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainLeftNav.scss";
 import Logo from "../../assets/images/logo.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import customer from "../../assets/icons/customer.svg";
 import dashboard from "../../assets/icons/dashboard.svg";
 import inventory from "../../assets/icons/inventory.svg";
@@ -18,7 +18,9 @@ const MainLeftNav = () => {
     <Box sx={{ display: { xs: "none", md: "flex" } }} className="mainpage-nav">
       <div>
         <div className="mainpage-logo">
+          <Link to='/'>
           <img src={Logo} alt="logo" />
+          </Link>
         </div>
 
         <div className="links">
