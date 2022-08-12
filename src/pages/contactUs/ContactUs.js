@@ -29,7 +29,7 @@ const ContactUs = () => {
               {" "}
               FAQ{" "}
             </Link>{" "}
-            Page!
+            Page
           </Typography>
 
           <Formik
