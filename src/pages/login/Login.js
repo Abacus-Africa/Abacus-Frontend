@@ -87,6 +87,7 @@ const Login = () => {
                   </div>
 
                   <div className="login_input_wrapper">
+                    
                     <label htmlFor="password"> Password </label>
                     <input
                       type="password"
@@ -119,7 +120,7 @@ const Login = () => {
                   </Box>
 
                   <Box className="btn-wrapper ">
-                  <Link to='/mainpage'>  <Button variant="outlined" type='submit'>Log In</Button> </Link>
+                  <Link to='/mainpage/dashboard'>  <Button variant="outlined" type='submit'>Log In</Button> </Link>
                     <Typography variant="h6">Or</Typography>
                     <Box>
                       <Button variant="contained">

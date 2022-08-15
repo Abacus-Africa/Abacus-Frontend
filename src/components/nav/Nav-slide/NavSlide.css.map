@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AACA,AACI,WADO,CACP,gBAAgB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,IAAI;CAOlB;;AAXL,AAKM,WALK,CACP,gBAAgB,CAId,CAAC,CAAA;EACG,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,iBAAiB;EACzB,WAAW,EAAE,GAAG;CACnB;;AAVP,AAYI,WAZO,CAYP,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;EAGb,eAAe,EAAC,QAAQ;EACxB,MAAM,EAAE,iBAAiB;CAC1B",
-    "sources": [
-        "NavSlide.scss"
-    ],
-    "names": [],
-    "file": "NavSlide.css"
-}
+{"version":3,"sources":["NavSlide.scss","NavSlide.css"],"names":[],"mappings":"AAEI;EACE,aAAA;EACA,sBAAA;EACA,iBAAA;ACDN;ADEM;EACI,eAAA;EACA,cAAA;EACA,yBAAA;EACA,gBAAA;ACAV;ADGI;EACE,aAAA;EAGA,yBAAA;EACA,yBAAA;ACHN","file":"NavSlide.css"}

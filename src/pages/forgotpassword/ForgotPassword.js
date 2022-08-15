@@ -20,7 +20,7 @@ const ForgotPassword = () => {
       <div className="forgot-password-wrapper">
         <Card
           sx={{
-            minWidth: { sm: 350, md: 450 },
+            // minWidth: { sm: 350, md: 450 },
             background: "#160051",
             padding: "40px 10px",
           }}
@@ -34,16 +34,11 @@ const ForgotPassword = () => {
             }}
             className="forgot-password-card-content"
           >
-            <Typography
-              sx={{ fontSize: 27, fontWeight: 500 }}
-              variant="h2"
-              color="text.secondary"
-              gutterBottom
-            >
+            <Typography className="forgot-password-card-content-top">
               Forgot Password
             </Typography>
 
-            <Typography sx={{ mb: 1.5, fontSize: 10 }} color="text.secondary">
+            <Typography className="forgot-password-card-content-detail">
               please enter your email and we will send you a resend password
               link
             </Typography>
@@ -78,20 +73,20 @@ const ForgotPassword = () => {
                 <form onSubmit={handleSubmit}>
                   <label>Email Address</label>
                   <input
-                     type="email"
-                     id="email"
-                     name="email"
-                     onChange={handleChange}
-                     onBlur={handleBlur}
-                     value={values.email}
-                     className={
-                       touched.email && errors.email ? "pass-error" : null
-                     }
-                     placeholder="Enter your email address"
+                    type="email"
+                    id="email"
+                    name="email"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.email}
+                    className={
+                      touched.email && errors.email ? "pass-error" : null
+                    }
+                    placeholder="Enter your email address"
                   />
-                     {errors.email && touched.email && (
-                      <span className="error">{errors.email}</span>
-                    )}
+                  {errors.email && touched.email && (
+                    <span className="error">{errors.email}</span>
+                  )}
 
                   <Box>
                     <Link to="/resetpassword">

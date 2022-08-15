@@ -44,8 +44,8 @@
   .links {
     display: flex;
     flex-direction: column;
-    @include font("Poppins", "normal", 400, "16px", "#4B5563");
-    a {
+    @include font(Poppins, normal, 400, 16px, #4B5563);
+    .mainlink {
       display: flex;
       margin: 10px 5px;
       padding: 10px 10px;

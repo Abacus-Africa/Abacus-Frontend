@@ -46,7 +46,7 @@ const NavSlide = (props) => {
         <Box className="nav-slide-links">
           {[
             ["Home", "/"],
-            ["Support", "/"],
+            ["Support", "/support"],
             ["Blog", "https://abacusafrica.hashnode.dev/"],
             ["Pricing", "/pricing"],
             ["Login", "/login"],

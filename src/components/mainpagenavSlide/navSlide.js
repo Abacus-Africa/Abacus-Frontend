@@ -2,7 +2,7 @@ import React from "react";
 import Dialog from "@mui/material/Dialog";
 import {  Box, IconButton, Slide,  } from "@mui/material";
 import "./navSlide.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import customer from "../../assets/icons/customer.svg";
 import dashboard from "../../assets/icons/dashboard.svg";
 import inventory from "../../assets/icons/inventory.svg";
@@ -48,7 +48,9 @@ const NavSlide = (props) => {
               sx={{ display: "grid", gridTemplateColumns: "1fr 1fr", alignItems:'center' }}
             >
               <Box className="mainpage-logo">
+              <Link to='/'>
                 <img src={Logo} alt="logo" />
+              </Link>
               </Box>
               <Box sx={{ display: "flex", justifyContent: "end" }}>
                 <IconButton aria-label="close" onClick={props.closeSideNav}>
@@ -56,44 +58,44 @@ const NavSlide = (props) => {
                 </IconButton>
               </Box>
             </Box>
-            <NavLink to="dashboard">
+            <NavLink to="dashboard" className='mainlink'>
               {" "}
               <img src={dashboard} alt="dashboard" />
               Dashboard
             </NavLink>
-            <NavLink to="invoices">
+            <NavLink to="invoices" className='mainlink'>
               {" "}
               <img src={invoice} alt="invoices" />
               Invoices
             </NavLink>
-            <NavLink to="inventory">
+            <NavLink to="inventory" className='mainlink'>
               <img src={inventory} alt="inventory" />
               Inventory
             </NavLink>
-            <NavLink to="customer">
+            <NavLink to="customer" className='mainlink'>
               <img src={customer} alt="customer" />
               Customer
             </NavLink>
-            <NavLink to="financial-reports">
+            <NavLink to="financial-reports" className='mainlink'>
               <img src={reports} alt="finance" />
               Financial reports
             </NavLink>
-            <NavLink to="wallet">
+            <NavLink to="wallet" className='mainlink'>
               <img src={wallet} alt="wallet" />
               Wallet
             </NavLink>
-            <NavLink to="profile">
+            <NavLink to="profile" className='mainlink'>
               <img src={profile} alt="profile" />
               Profile
             </NavLink>
-            <NavLink to="settings">
+            <NavLink to="settings" className='mainlink'>
               <img src={settings} alt="settings" />
               Settings
             </NavLink>
           </div>
 
-          <div className="logout">
-            <NavLink to="/">
+          <div className="logout" >
+            <NavLink to="/" className='mainlink'>
               <img src={logout} alt="logout" />
               Logout
             </NavLink>
