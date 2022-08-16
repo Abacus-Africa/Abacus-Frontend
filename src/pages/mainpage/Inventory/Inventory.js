@@ -5,12 +5,11 @@ import "./Inventory.scss"
 import searchIcon from "./../../../assets/icons/blueSearchIcon.svg"
 import addIcon from "./../../../assets/icons/addIcon.svg"
 import trashIcon from "./../../../assets/icons/trashIcon.svg"
-import editIcon from "./../../../assets/icons/editIcon.svg"
 import plusIcon from "./../../../assets/icons/plusIcon.svg"
 import InventoryModal from '../../../components/modals/InventoryModal/InventoryModal'
 
 const Inventory = () => {
-  const [ listData,setListtData ] = useState({
+  const [ listData ] = useState({
 
   })
   const [ AddProductStatus,setAddProductStatus ] = useState(false)

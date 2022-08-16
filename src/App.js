@@ -11,6 +11,7 @@ import Support from "./pages/support/Support";
 import PasswordChanged from "./pages/passwordChanged/PasswordChanged";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Inventory from "./pages/mainpage/Inventory/Inventory";
+import Customers from "./pages/mainpage/Customers/Customers";
 
 function App(props) {
   
@@ -32,6 +33,7 @@ function App(props) {
           <Route path='mainpage' element={<Mainpage />} >
              <Route path='dashboard' element={<Dashboard />} />
              <Route path='inventory' element={<Inventory />} />
+             <Route path='customer' element={<Customers />} />
           </Route>
         </Routes>
       </Router>
