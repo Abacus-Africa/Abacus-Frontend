@@ -1,0 +1,79 @@
+@mixin font($f, $s, $w, $size, $c) {
+  font-family: $f;
+  font-style: $s;
+  font-weight: $w;
+  font-size: $size;
+  color: $c;
+}
+
+.inventory {
+  margin: 0px 20px;
+  .inventory-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 32px;
+    height: 68px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 20px 0px;
+    .inventory-total {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .total-amount {
+        @include font(Poppins, normal, 600, 14px, #4b29a6);
+      }
+      .total-summary {
+        @include font(Open Sans, normal, 400, 16px, #080e19);
+      }
+    }
+  }
+
+  .inventory-functions {
+    display: flex;
+    justify-content: space-between;
+    .function-text {
+      @include font(Poppins, normal, 400, 16px, #080e19);
+    }
+    .function-icons {
+      button {
+        img {
+          width: 18px;
+        }
+      }
+    }
+  }
+  .inventory-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .empty-list {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 40px 32px;
+      background: #ffffff;
+      border-radius: 6px;
+      width: 50%;
+      @include font(Poppins, normal, 400, 20px, #080e19);
+      .empty-list-button {
+        background: #4b29a6;
+        border-radius: 5px;
+        width: 152px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 16px;
+        @include font(Open Sans, normal, 400, 14px, #f0fdf4);
+        margin-top: 20px;
+      }
+    }
+  }
+}

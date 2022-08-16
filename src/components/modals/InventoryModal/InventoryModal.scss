@@ -1,0 +1,75 @@
+@mixin font($f, $s, $w, $size, $c) {
+  font-family: $f;
+  font-style: $s;
+  font-weight: $w;
+  font-size: $size;
+  color: $c;
+}
+
+.inventory-modal {
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 80px;
+    min-width: 436px;
+    min-height: 586px;
+    background: #f9fafb;
+    border-radius: 6px;
+    .modal-top {
+      @include font(Poppins, normal, 500, 25px, #000000);
+      margin-bottom: 10px;
+    }
+    form {
+        display: contents;
+        align-items: center;
+        margin-top: 20px;
+      .inventory-input-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+        label {
+          @include font(Roboto, normal, 400, 14px, rgba(0, 0, 0, 0.85));
+        }
+        input {
+          width: 276px;
+          height: 32px;
+          background: #ffffff;
+          border: 1px solid #d9d9d9;
+          border-radius: 6px;
+          padding: 10px 10px;
+          &:focus {
+            outline: none;
+            border: 1px solid rgb(56, 125, 222);
+          }
+          &::placeholder {
+            font-size: 13px;
+          }
+        }
+        .info-error {
+            border: 1px solid #ff0000;
+          }
+          .error {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            color: #ff0000;
+            margin-top: 3px;
+          }
+      }
+      .inventory-modal-button{
+        background: #4b29a6;
+        border-radius: 5px;
+        width: 152px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 16px;
+        @include font(Open Sans, normal, 400, 14px, #f0fdf4);
+        margin-top: 20px;
+      }
+    }
+  }
+}

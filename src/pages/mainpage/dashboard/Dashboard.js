@@ -3,6 +3,7 @@ import {
   Divider,
   FormControl,
   Grid,
+  IconButton,
   MenuItem,
   Pagination,
   Select,
@@ -62,9 +63,15 @@ const Dashboard = () => {
           </Box>
         </Box>
         <Box className="dashboard-top-icons">
-          <img src={search} alt="search" />
-          <img src={notification} alt="notification" />
-          <img src={user} alt="user" />
+        <IconButton>
+            <img src={search} alt="search" />
+          </IconButton>
+          <IconButton>
+            <img src={notification} alt="notification" />
+          </IconButton>
+          <IconButton>
+            <img src={user} alt="user" />
+          </IconButton>
         </Box>
       </Box>
 

@@ -51,13 +51,14 @@
       padding: 10px 10px;
       border-radius: 5px;
       align-items: center;
+      transition: 0.5s;
       img {
         width: 20px;
         margin-right: 10px;
       }
     }
     .active {
-      border: 1px solid rgba(0, 0, 0, 0.412);
+      border: 1px solid rgba(161, 159, 159, 0.453);
       background-color: rgb(255, 255, 255);
       box-shadow: 2px 1px 2px 2px rgba(1, 1, 1, 0.056),
         -2px -1px 2px 2px rgba(1, 1, 1, 0.056);

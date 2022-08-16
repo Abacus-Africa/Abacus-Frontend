@@ -1,0 +1,29 @@
+@mixin fonts($f, $s, $w, $size, $c) {
+    font-family: $f;
+    font-style: $s;
+    font-weight: $w;
+    font-size: $size;
+    color: $c;
+  }
+
+    .dashboard-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 40px 0px 0px 0px;
+      .dashboard-top-greeting {
+        .greeting-name {
+          @include fonts(Poppins, normal, 500, 33px, #080e19);
+        }
+        .greeting-text {
+          @include fonts(Poppins, normal, 400, 14px, #000000);
+        }
+      }
+      .dashboard-top-icons {
+        display: flex;
+        justify-content: flex-end;
+        img {
+          width: 24px;
+          margin: 0px 5px;
+        }
+      }
+    }

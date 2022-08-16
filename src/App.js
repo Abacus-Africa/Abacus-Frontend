@@ -10,6 +10,7 @@ import Dashboard from "./pages/mainpage/dashboard/Dashboard";
 import Support from "./pages/support/Support";
 import PasswordChanged from "./pages/passwordChanged/PasswordChanged";
 import ContactUs from "./pages/contactUs/ContactUs";
+import Inventory from "./pages/mainpage/Inventory/Inventory";
 
 function App(props) {
   
@@ -30,6 +31,7 @@ function App(props) {
          
           <Route path='mainpage' element={<Mainpage />} >
              <Route path='dashboard' element={<Dashboard />} />
+             <Route path='inventory' element={<Inventory />} />
           </Route>
         </Routes>
       </Router>
