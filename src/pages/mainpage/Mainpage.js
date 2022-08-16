@@ -4,7 +4,7 @@ import MainLeftNav from "../../components/mainpagenav/MainLeftNav";
 import { Outlet } from "react-router-dom";
 import { Box, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import NavSlide from "../../components/mainpagenavSlide/navSlide";
+import NavSlide from "../../components/mainpagenavSlide/NavSlide";
 
 const Mainpage = () => {
   const [openNav, setOpenNav] = useState(false);
