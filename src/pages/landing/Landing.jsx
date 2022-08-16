@@ -1,9 +1,9 @@
 import React from 'react'
 import Girl from "../../assets/images/girl.png"
 import MobileGirl from "../../assets/images/mobileGirl.svg"
-import Dashboard from "../../assets/images/landing-dashboard.svg"
-import customer from "../../assets/images/customer.svg"
-import inventory from "../../assets/images/inventory.svg"
+import Dashboard from "../../assets/images/landing-dashboard.png"
+import customer from "../../assets/images/customer.png"
+import inventory from "../../assets/images/inventory.png"
 import Mailchimp from '../../components/mailchimp/Mailchimp'
 import Angle from "../../assets/images/downangle.svg"
 import Pricing from '../../components/pricing'
@@ -35,7 +35,7 @@ const Landing = () => {
             </div>
         </div>
         <div className="md:w-1/4">
-            <img src={Girl} alt="A girl with her laptop" className='hidden md:block rounded-xl h-5/6' ></img>
+            <img src={Girl} alt="A girl with her laptop" className='hidden md:block rounded-xl' ></img>
             <img src={MobileGirl} alt="A girl with her laptop" className='block md:hidden rounded-none md:rounded-lg w-full' ></img>
         </div>
         <div className=' flex flex-col items-center md:hidden text-center mt-6 leading-6' >
