@@ -1,0 +1,73 @@
+@mixin font($f, $s, $w, $size, $c) {
+  font-family: $f;
+  font-style: $s;
+  font-weight: $w;
+  font-size: $size;
+  color: $c;
+}
+
+.customer {
+  margin: 0px 20px;
+
+  .css-177gid-MuiTableCell-root {
+    text-align: start;
+    @include font(Open Sans, normal, 400, 20px, #000000);
+  }
+  .css-1ex1afd-MuiTableCell-root {
+    text-align: start;
+    @include font(Open Sans, normal, 400, 20px, #000000);
+  }
+  .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+    margin-top: 50px;
+  }
+  .css-1ygcj2i-MuiTableCell-root {
+    @include font(Poppins, normal, 600, 20px, #160051);
+  }
+  .add-customer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    .add-customer-btn{
+        background: #4b29a6;
+        border-radius: 5px;
+        width: 155px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 16px;
+        @include font(Open Sans, normal, 400, 14px, #f0fdf4);
+        img{
+            margin-right: 5px;
+        }
+    }
+  }
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    margin-bottom: 30px;
+    .pagination-text {
+      @include font(Open Sans, normal, 400, 14px, #080e19);
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width:900px) {
+    .customer{
+    .css-177gid-MuiTableCell-root {
+        text-align: start;
+        @include font(Open Sans, normal, 400, 14px, #000000);
+      }
+      .css-1ex1afd-MuiTableCell-root {
+        text-align: start;
+        @include font(Open Sans, normal, 400, 14px, #000000);
+      }
+      .css-1ygcj2i-MuiTableCell-root {
+        @include font(Poppins, normal, 500, 16px, #160051);
+      }
+    }
+}

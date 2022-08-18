@@ -157,11 +157,11 @@
         //   display: flex;
           flex-direction: column;
           .details-value {
-            @include fonts("Open Sans", normal, 400, 14px, #080e19);
+            @include fonts(Open Sans, normal, 400, 14px, #080e19);
             margin: 11px 0px;
           }
           .details-status {
-            @include fonts("Open Sans", normal, 400, 14px, #080e19);
+            @include fonts(Open Sans, normal, 400, 14px, #080e19);
             margin: 10px 0px;
             padding: 4px 16px;
             display: flex;
@@ -184,7 +184,7 @@
     // justify-content: center;
     margin-bottom: 30px;
     .pagination-text {
-      @include fonts("Open Sans", normal, 400, 14px, #080e19);
+      @include fonts(Open Sans, normal, 400, 14px, #080e19);
       margin-top: 30px;
     }
   }

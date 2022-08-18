@@ -54,7 +54,7 @@ const Footer = () => {
                 <p className='mb-5'>Get updates on offers, new features and discounts.</p>
                 <div className='text-black'>
                     <div className='flex flex-col'>
-                        <label for="name" className='text-white'>First Name</label>
+                        <label htmlFor="name" className='text-white'>First Name</label>
                         <input type='text' id="name"
                         name="name"
                         required placeholder='First name' className='outline-none placeholder:text-pblack py-2 px-3 rounded-lg mt-1'></input>
