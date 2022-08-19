@@ -1,5 +1,5 @@
 .contactus-wrapper {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -103,8 +103,6 @@
 }
 
 .contactus-details {
-  width: 567px;
-  height: 604px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,12 +135,13 @@
 
 @media (max-width: 900px) {
   .contactus-wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
   .contactus-wrapper .contactus-form-wrapper {
     margin-right: 0px;
     transform: scale(0.7);
+    width: 480px;
   }
   .contactus-wrapper .contactus-details {
     transform: scale(0.7);

@@ -1,13 +1,12 @@
+import { Box, FormControl, Grid, IconButton, MenuItem, Pagination, Select, Typography } from "@mui/material";
 import {
-  Box,
-  Divider,
-  FormControl,
-  Grid,
-  IconButton,
-  MenuItem,
-  Pagination,
-  Select,
-  Typography,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
 } from "@mui/material";
 import React, { useState } from "react";
 import "./Dashboard.scss";
@@ -20,39 +19,85 @@ import dot from "./../../../assets/icons/dot.svg";
 import chart from "./../../../assets/images/Chart.png";
 import piechart from "./../../../assets/images/piechart.png";
 import pieframe from "./../../../assets/images/pieframe.png";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Dashboard = () => {
-  const [transactions, setTransactions] = useState("");
-  const [days, setDays] = useState("");
-  const [ transactionDates ] = useState([
-    "Jun 1st", "Jun 3rd", "Jun 5th", "Jun 6th", "Jun 7th", "Jun 8th", "Jun 9th",
-    "Jun 10th", "Jun 11th", "Jun 12th",
-  ]);
-  const [ transactionId ] = useState([
-    "#345678","#345678","#345678","#345678","#345678","#345678","#345678",
-    "#345678","#345678","#345678",
-  ]);
-  const [ transactionValue ] = useState([
-    "$30,000","$30,000","$30,000","$30,000","$30,000","$30,000","$30,000",
-    "$30,000","$30,000","$30,000",
-  ])
-  const [ transactionStatus ] = useState([
-    "Completed","Pending","Pending","Completed","Cancelled","Pending","Pending",
-    "Pending","Completed","Cancelled",
-  ])
-  const [ transactionDescription] = useState([
-    "Personal payment","Shopping","Personal payment","Tuition","Shopping","Personal payment",
-    "Tuition","Shopping","Personal payment","Tuition",
-  ])
-  
+  const [transaction, setTransaction] = React.useState('All Transactions');
 
-  const handleTransactionsChange = (event) => {
-    setTransactions(event.target.value);
+  const handleChangeTransaction = (event) => {
+    setTransaction(event.target.value);
   };
-  const handleDaysChange = (event) => {
-    setDays(event.target.value);
-  };
+  const [tableData] = useState([
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Completed",
+      description: "Personal Payment",
+    },
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Pending",
+      description: "Personal Payment",
+    },
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Pending",
+      description: "Personal Payment",
+    },
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Completed",
+      description: "Personal Payment",
+    },
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Cancelled",
+      description: "Personal Payment",
+    },
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Pending",
+      description: "Personal Payment",
+    },
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Pending",
+      description: "Personal Payment",
+    },
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Pending",
+      description: "Personal Payment",
+    },
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Completed",
+      description: "Personal Payment",
+    },
+    {
+      date: "Jun 1st",
+      id: "#344343",
+      value: "$30,000",
+      status: "Completed",
+      description: "Personal Payment",
+    },
+  ]);
   return (
     <div className="dashboard">
       <Box className="dashboard-top">
@@ -63,7 +108,7 @@ const Dashboard = () => {
           </Box>
         </Box>
         <Box className="dashboard-top-icons">
-        <IconButton>
+          <IconButton>
             <img src={search} alt="search" />
           </IconButton>
           <IconButton>
@@ -169,119 +214,93 @@ const Dashboard = () => {
         </Grid>
       </Box>
 
-      <Box className="transactions">
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <Box className="transactions-wrapper">
-              <Grid container className="transactions-top">
-                <Grid item xs={5} className="transactions-title">
-                  Transactions
-                </Grid>
-                <Grid item xs={4} className="transactions-drop-downs">
-                  <FormControl className="drops">
-                    <Select
-                      value={transactions}
-                      onChange={handleTransactionsChange}
-                      displayEmpty
-                      inputProps={{ "aria-label": "transactions" }}
-                      // sx={{
-                      //   "& .MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input" : {
-                      //     padding: '5px 5px'
-                      //   }
-                      // }}
-                    >
-                      <MenuItem value="">All Transaction</MenuItem>
-                      <MenuItem value="...">...</MenuItem>
-                      <MenuItem value="...">...</MenuItem>
-                    </Select>
-                  </FormControl>
-
-                  <FormControl className="drops">
-                    <Select
-                      value={days}
-                      onChange={handleDaysChange}
-                      displayEmpty
-                      inputProps={{ "aria-label": "days" }}
-                    >
-                      <MenuItem value="">Last 30 days</MenuItem>
-                      <MenuItem value="...">...</MenuItem>
-                      <MenuItem value="...">...</MenuItem>
-                    </Select>
-                  </FormControl>
-                </Grid>
-              </Grid>
-
-              <Grid container className="transactions-heading">
-                <Grid item xs={3} md={2} sx={{display:'flex'}} className="transactions-heading-title">
-                  Date <KeyboardArrowDownIcon />
-                </Grid>
-                <Grid item xs={3} md={2} sx={{display:'flex'}} className="transactions-heading-title">
-                  ID <KeyboardArrowDownIcon />
-                </Grid>
-                <Grid item xs={3} md={2} sx={{display:'flex'}} className="transactions-heading-title">
-                  Value <KeyboardArrowDownIcon />
-                </Grid>
-                <Grid item xs={3} md={2} sx={{display:'flex'}} className="transactions-heading-title">
-                  Status <KeyboardArrowDownIcon />
-                </Grid>
-                <Grid item  md={2} sx={{display: {xs:'none', md:'flex'} }} className="transactions-heading-title">
-                  Description <KeyboardArrowDownIcon />
-                </Grid>
-              </Grid>
-              <Box className='divider'>
-                <Divider />
-              </Box>
-              <Grid container className='transaction-values'>
-                <Grid item xs={3} md={2} className='transaction-values-details' sx={{display:'flex'}}>
-                  { transactionDates.map((item,index)=>{
-                    return (
-                      <Typography key={index} variant='p' className='details-value'>{item}</Typography>
-                    )
-                  }) }
-                </Grid>
-
-                <Grid item xs={3} md={2} className='transaction-values-details' sx={{display:'flex'}}>
-                  { transactionId.map((item,index)=>{
-                    return (
-                      <Typography key={index} variant='p' className='details-value'>{item}</Typography>
-                    )
-                  }) }
-                </Grid>
-
-                <Grid item xs={3} md={2} className='transaction-values-details' sx={{display:'flex'}}>
-                  { transactionValue.map((item,index)=>{
-                    return (
-                      <Typography key={index} variant='p' className='details-value'>{item}</Typography>
-                    )
-                  }) }
-                </Grid>
-
-                <Grid item xs={3} md={2} className='transaction-values-details'>
-                  { transactionStatus.map((item,index)=>{
-                    return (
-                      <Typography key={index} variant='p' className='details-status' sx={{
-                        background : item === 'Completed' ? "#15803D" : item === "Pending" ? "#F38A20" : "#DC2626" , display:'flex'
-                      }}>{item}</Typography>
-                    )
-                  }) }
-                </Grid>
-
-                <Grid item  md={4} className='transaction-values-details' sx={{display: {xs:'none', md:'flex'} }} >
-                  { transactionDescription.map((item,index)=>{
-                    return (
-                      <Typography key={index} variant='p' className='details-value'>{item}</Typography>
-                    )
-                  }) }
-                </Grid>
-              </Grid>
+      <Box className="transaction-table">
+        <TableContainer component={Paper}>
+          <Box className="table-heading">
+            <p className="heading-title">Transactions</p>
+            <Box className="heading-select">
+              <FormControl fullWidth>
+                <Select
+                  id="demo-simple-select"
+                  value={transaction}
+                  onChange={handleChangeTransaction}
+                >
+                  <MenuItem >All Transactions</MenuItem>
+                  <MenuItem >...</MenuItem>
+                  <MenuItem >...</MenuItem>
+                </Select>
+              </FormControl>
+              <FormControl fullWidth>
+                <Select
+                  id="demo-simple-select"
+                  value={transaction}
+                  onChange={handleChangeTransaction}
+                >
+                  <MenuItem >All Transactions</MenuItem>
+                  <MenuItem >...</MenuItem>
+                  <MenuItem >...</MenuItem>
+                </Select>
+              </FormControl>
             </Box>
-          </Grid>
-        </Grid>
+          </Box>
+          <Table aria-label="simple table">
+            <TableHead>
+              <TableRow>
+                <TableCell className="table-head">Date</TableCell>
+                <TableCell className="table-head">ID</TableCell>
+                <TableCell className="table-head">Value</TableCell>
+                <TableCell className="table-head">Status</TableCell>
+                <TableCell className="table-head">Description</TableCell>
+              </TableRow>
+            </TableHead>
+
+            <TableBody>
+              {tableData.map((row) => (
+                <TableRow key={row.id}>
+                  <TableCell className="table-values">{row.date}</TableCell>
+                  <TableCell className="table-values">{row.id}</TableCell>
+                  <TableCell className="table-values">{row.value}</TableCell>
+                  <TableCell
+                    className="table-status"
+                    sx={{
+                      background:
+                        row.status === "Completed"
+                          ? "#15803D"
+                          : row.status === "Pending"
+                          ? "#F38A20"
+                          : "#DC2626",
+                      color: "#F0FDF4",
+                      borderRadius: "20px",
+                      padding: "6px 6px",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    {row.status}
+                  </TableCell>
+                  <TableCell className="table-values">
+                    {row.description}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
       </Box>
-              <Box className='pagination'>
-              <Pagination count={10} variant="outlined" shape="rounded" size='small' />
-              <Typography variant='p' className='pagination-text'>Showing 10 items out of 95</Typography>
-              </Box>
+
+      <Box className="pagination">
+        <Pagination
+          count={10}
+          variant="outlined"
+          shape="rounded"
+          size="small"
+        />
+        <Typography variant="p" className="pagination-text">
+          Showing 10 items out of 95
+        </Typography>
+      </Box>
     </div>
   );
 };

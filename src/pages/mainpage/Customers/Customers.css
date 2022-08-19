@@ -1,0 +1,88 @@
+.customer {
+  margin: 0px 20px;
+}
+.customer .customers-table-container {
+  margin-top: 40px;
+}
+.customer .table-body-values {
+  text-align: start;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.customer .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  margin-top: 50px;
+}
+.customer .table-head-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #160051;
+}
+.customer .add-customer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.customer .add-customer .add-customer-btn {
+  background: #4b29a6;
+  border-radius: 5px;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #f0fdf4;
+  margin-bottom: 20px;
+}
+.customer .add-customer .add-customer-btn img {
+  margin-right: 5px;
+}
+.customer .pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.customer .pagination .pagination-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #080e19;
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .customer .table-body-values {
+    text-align: start;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+  }
+  .customer .table-head-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #160051;
+  }
+  .customer .add-customer .add-customer-btn {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #f0fdf4;
+  }
+}/*# sourceMappingURL=Customers.css.map */

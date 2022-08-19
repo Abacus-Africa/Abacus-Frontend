@@ -125,82 +125,40 @@
   width: 150.1px;
   margin-top: 10px;
 }
-.dashboard .transactions {
-  width: 100%;
-  margin: 30px 0px;
+.dashboard .transaction-table {
+  margin-bottom: 20px;
 }
-.dashboard .transactions .transactions-wrapper {
-  background: #ffffff;
-  border: 1px solid #e7e8f2;
-  border-radius: 10px;
-  margin: 0px !important;
-  width: 100%;
-}
-.dashboard .transactions .transactions-wrapper .transactions-top {
+.dashboard .transaction-table .table-heading {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-  padding: 16px 24px 0px 24px;
 }
-.dashboard .transactions .transactions-wrapper .transactions-top .transactions-title {
-  font-family: Poppins;
+.dashboard .transaction-table .table-heading .heading-select {
+  display: flex;
+}
+.dashboard .transaction-table .table-heading .heading-title {
+  font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  color: #080e19;
+  font-size: 23px;
+  color: #080E19;
 }
-.dashboard .transactions .transactions-wrapper .transactions-top .transactions-drop-downs {
-  display: flex;
-  justify-content: space-between;
+.dashboard .transaction-table .css-1q1u3t4-MuiTableRow-root {
+  vertical-align: baseline;
 }
-.dashboard .transactions .transactions-wrapper .transactions-top .transactions-drop-downs .drops {
-  height: 40px;
-  border-radius: 6px;
+.dashboard .transaction-table .table-head {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #160051;
 }
-.dashboard .transactions .transactions-wrapper .transactions-heading {
-  padding: 0px 24px 0px 24px;
-}
-.dashboard .transactions .transactions-wrapper .transactions-heading .transactions-heading-title {
-  align-items: center;
+.dashboard .transaction-table .table-values {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  color: #080e19;
-}
-.dashboard .transactions .transactions-wrapper .divider {
-  margin: 10px 0px 10px 0px;
-}
-.dashboard .transactions .transactions-wrapper .transaction-values {
-  padding: 0px 24px 0px 24px;
-}
-.dashboard .transactions .transactions-wrapper .transaction-values .transaction-values-details {
-  flex-direction: column;
-}
-.dashboard .transactions .transactions-wrapper .transaction-values .transaction-values-details .details-value {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  color: #080e19;
-  margin: 11px 0px;
-}
-.dashboard .transactions .transactions-wrapper .transaction-values .transaction-values-details .details-status {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  color: #080e19;
-  margin: 10px 0px;
-  padding: 4px 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 101px;
-  height: 32px;
-  border-radius: 20px;
+  color: #1F2937;
 }
 .dashboard .pagination {
   display: flex;
@@ -209,10 +167,16 @@
   margin-bottom: 30px;
 }
 .dashboard .pagination .pagination-text {
-  font-family: "Open Sans";
+  font-family: Open Sans;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: #080e19;
   margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .dashboard .dashboard-top .dashboard-top-greeting .greeting-name {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=Dashboard.css.map */
