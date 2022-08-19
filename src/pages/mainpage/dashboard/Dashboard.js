@@ -77,7 +77,7 @@ const Dashboard = () => {
 
       <Box className="dashboard-card">
         <Grid container spacing={2}>
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} md={4}>
             <Box className="card-wrapper">
               <Typography variant="p" className="card-title">
                 Balance
@@ -96,7 +96,7 @@ const Dashboard = () => {
             </Box>
           </Grid>
 
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} md={4}>
             <Box className="card-wrapper">
               <Typography variant="p" className="card-title">
                 Profit
@@ -115,7 +115,7 @@ const Dashboard = () => {
             </Box>
           </Grid>
 
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} md={4}>
             <Box className="card-wrapper">
               <Typography variant="p" className="card-title">
                 Loss
@@ -152,7 +152,7 @@ const Dashboard = () => {
             </Box>
           </Grid>
 
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} md={3}>
             <Box className="wrapper">
               <Box className="reports-top">
                 <Typography variant="p" className="reports-text">
