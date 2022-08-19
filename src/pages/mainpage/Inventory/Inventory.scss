@@ -77,3 +77,14 @@
     }
   }
 }
+
+
+@media (max-width:900px) {
+  .inventory .inventory-top .inventory-total .total-summary{
+    font-size: 12px;
+  }
+  .inventory .inventory-list .empty-list{
+    width: 100%;
+    font-size: 15px;
+  }
+}

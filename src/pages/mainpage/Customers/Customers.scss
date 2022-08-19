@@ -8,7 +8,10 @@
 
 .customer {
   margin: 0px 20px;
-
+  .customers-table-container{
+    margin-top: 40px;
+  }
+  
   .css-177gid-MuiTableCell-root {
     text-align: start;
     @include font(Open Sans, normal, 400, 20px, #000000);
@@ -30,14 +33,15 @@
     .add-customer-btn{
         background: #4b29a6;
         border-radius: 5px;
-        width: 155px;
+        width: 160px;
         height: 40px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 8px 16px;
-        @include font(Open Sans, normal, 400, 14px, #f0fdf4);
+        @include font(Open Sans, normal, 400, 13px, #f0fdf4);
+        margin-bottom: 20px;
         img{
             margin-right: 5px;
         }
@@ -67,7 +71,10 @@
         @include font(Open Sans, normal, 400, 14px, #000000);
       }
       .css-1ygcj2i-MuiTableCell-root {
-        @include font(Poppins, normal, 500, 16px, #160051);
+        @include font(Poppins, normal, 600, 18px, #160051);
       }
+    }
+    .customer .add-customer .add-customer-btn{
+      @include font(Open Sans, normal, 400, 12px, #f0fdf4);
     }
 }

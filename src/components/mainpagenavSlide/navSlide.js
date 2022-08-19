@@ -58,44 +58,44 @@ const NavSlide = (props) => {
                 </IconButton>
               </Box>
             </Box>
-            <NavLink to="dashboard" className='mainlink'>
+            <NavLink to="dashboard" className='mainlink' onClick={props.closeSideNav}>
               {" "}
               <img src={dashboard} alt="dashboard" />
               Dashboard
             </NavLink>
-            <NavLink to="invoices" className='mainlink'>
+            <NavLink to="invoices" className='mainlink' onClick={props.closeSideNav}>
               {" "}
               <img src={invoice} alt="invoices" />
               Invoices
             </NavLink>
-            <NavLink to="inventory" className='mainlink'>
+            <NavLink to="inventory" className='mainlink' onClick={props.closeSideNav}>
               <img src={inventory} alt="inventory" />
               Inventory
             </NavLink>
-            <NavLink to="customer" className='mainlink'>
+            <NavLink to="customer" className='mainlink' onClick={props.closeSideNav}>
               <img src={customer} alt="customer" />
               Customer
             </NavLink>
-            <NavLink to="financial-reports" className='mainlink'>
+            <NavLink to="financial-reports" className='mainlink' onClick={props.closeSideNav}>
               <img src={reports} alt="finance" />
               Financial reports
             </NavLink>
-            <NavLink to="wallet" className='mainlink'>
+            <NavLink to="wallet" className='mainlink' onClick={props.closeSideNav}>
               <img src={wallet} alt="wallet" />
               Wallet
             </NavLink>
-            <NavLink to="profile" className='mainlink'>
+            <NavLink to="profile" className='mainlink' onClick={props.closeSideNav}>
               <img src={profile} alt="profile" />
               Profile
             </NavLink>
-            <NavLink to="settings" className='mainlink'>
+            <NavLink to="settings" className='mainlink' onClick={props.closeSideNav}>
               <img src={settings} alt="settings" />
               Settings
             </NavLink>
           </div>
 
           <div className="logout" >
-            <NavLink to="/" className='mainlink'>
+            <NavLink to="/" className='mainlink' onClick={props.closeSideNav}>
               <img src={logout} alt="logout" />
               Logout
             </NavLink>

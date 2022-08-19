@@ -105,8 +105,8 @@ const Customers = () => {
                         src={UserIcon}
                         alt="user"
                         sx={{
-                          width: "48px",
-                          marginRight: "5px",
+                          width:"30px",
+                          marginRight: "8px",
                         }}
                       />
                       {row.name}
@@ -142,7 +142,7 @@ const Customers = () => {
 
       <Box className="add-customer">
         <Button className="add-customer-btn">
-          <Box component="img" src={plusIcon} /> Add Product
+          <Box component="img" src={plusIcon} /> Add Customer
         </Button>
       </Box>
       <Box className="pagination">
