@@ -85,7 +85,7 @@ const Customers = () => {
             <TableHead>
               <TableRow>
                 {tableHead.map((item) => (
-                  <TableCell>{item.title}</TableCell>
+                  <TableCell className="table-head-title">{item.title}</TableCell>
                 ))}
               </TableRow>
             </TableHead>
@@ -93,8 +93,8 @@ const Customers = () => {
             <TableBody>
               {tableData.map((row) => (
                 <TableRow key={row.name}>
-                  <TableCell scope="row">
-                    <Box
+                  <TableCell className="table-body-values" scope="row">
+                    <Box 
                       sx={{
                         display: "flex",
                         alignItems: "center",
@@ -112,9 +112,9 @@ const Customers = () => {
                       {row.name}
                     </Box>
                   </TableCell>
-                  <TableCell align="right">{row.email}</TableCell>
-                  <TableCell align="right">{row.number}</TableCell>
-                  <TableCell align="right">
+                  <TableCell className="table-body-values" align="right">{row.email}</TableCell>
+                  <TableCell className="table-body-values" align="right">{row.number}</TableCell>
+                  <TableCell className="table-body-values" align="right">
                     <Box
                       sx={{
                         display: "flex",

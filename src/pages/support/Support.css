@@ -74,6 +74,9 @@
   flex-direction: column;
   align-items: center;
 }
+.support-body .faq-body .css-19hmyna-MuiPaper-root-MuiAccordion-root .css-i4bv87-MuiSvgIcon-root {
+  color: white;
+}
 .support-body .faq-body .faq-body-top {
   font-family: Poppins;
   font-style: normal;

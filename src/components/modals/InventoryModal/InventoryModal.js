@@ -1,6 +1,6 @@
 import React from "react";
 import Dialog from "@mui/material/Dialog";
-import "./InventoryModal.scss";
+import "./InventoryModal.css";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import { Button } from "@mui/material";

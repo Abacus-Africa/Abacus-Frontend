@@ -112,68 +112,30 @@
       }
     }
   }
-  .transactions {
-    width: 100%;
-    margin: 30px 0px;
-    .transactions-wrapper {
-      background: #ffffff;
-      border: 1px solid #e7e8f2;
-      border-radius: 10px;
-      margin: 0px !important;
-      width: 100%;
-      .transactions-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 50px;
-        padding: 16px 24px 0px 24px;
-        .transactions-title {
-          @include fonts(Poppins, normal, 600, 20px, #080e19);
-        }
-        .transactions-drop-downs {
-          display: flex;
-          justify-content: space-between;
-          .drops {
-            height: 40px;
-            border-radius: 6px;
-          }
-        }
+  .transaction-table{
+    margin-bottom: 20px;
+    .table-heading{
+      padding: 20px;
+      display:flex;
+      justify-content:space-between;
+      .heading-select{
+        display: flex
       }
-      .transactions-heading {
-        padding: 0px 24px 0px 24px;
-
-        .transactions-heading-title {
-        //   display: flex;
-          align-items: center;
-          @include fonts(Open Sans, normal, 400, 14px, #080e19);
-        }
+      .heading-title{
+        @include fonts(Open Sans, normal, 600, 23px, #080E19);
       }
-      .divider {
-        margin: 10px 0px 10px 0px;
-      }
-      .transaction-values {
-        padding: 0px 24px 0px 24px;
-        .transaction-values-details {
-        //   display: flex;
-          flex-direction: column;
-          .details-value {
-            @include fonts(Open Sans, normal, 400, 14px, #080e19);
-            margin: 11px 0px;
-          }
-          .details-status {
-            @include fonts(Open Sans, normal, 400, 14px, #080e19);
-            margin: 10px 0px;
-            padding: 4px 16px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 101px;
-            height: 32px;
-            border-radius: 20px;
-          }
-        }
-      }
+    }
+    .css-1q1u3t4-MuiTableRow-root{
+      vertical-align: baseline
+    }
+    .table-head{
+      @include fonts(Open Sans, normal, 400, 16px, #160051);
+    }
+    .table-values{
+      @include fonts(Open Sans, normal, 400, 14px, #1F2937);
+    }
+    .table-status{
+     
     }
   }
 

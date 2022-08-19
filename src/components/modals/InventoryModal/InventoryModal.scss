@@ -12,10 +12,11 @@
     flex-direction: column;
     align-items: center;
     padding: 48px 80px;
-    min-width: 436px;
+    // min-width: 436px;
     min-height: 586px;
     background: #f9fafb;
     border-radius: 6px;
+  }
     .modal-top {
       @include font(Poppins, normal, 500, 25px, #000000);
       margin-bottom: 10px;
@@ -71,5 +72,5 @@
         margin-top: 20px;
       }
     }
-  }
+  
 }

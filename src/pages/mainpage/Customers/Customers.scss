@@ -12,18 +12,14 @@
     margin-top: 40px;
   }
   
-  .css-177gid-MuiTableCell-root {
-    text-align: start;
-    @include font(Open Sans, normal, 400, 20px, #000000);
-  }
-  .css-1ex1afd-MuiTableCell-root {
+  .table-body-values{
     text-align: start;
     @include font(Open Sans, normal, 400, 20px, #000000);
   }
   .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
     margin-top: 50px;
   }
-  .css-1ygcj2i-MuiTableCell-root {
+  .table-head-title {
     @include font(Poppins, normal, 600, 20px, #160051);
   }
   .add-customer{
@@ -62,15 +58,11 @@
 
 @media (max-width:900px) {
     .customer{
-    .css-177gid-MuiTableCell-root {
+      .table-body-values {
         text-align: start;
         @include font(Open Sans, normal, 400, 14px, #000000);
       }
-      .css-1ex1afd-MuiTableCell-root {
-        text-align: start;
-        @include font(Open Sans, normal, 400, 14px, #000000);
-      }
-      .css-1ygcj2i-MuiTableCell-root {
+      .table-head-title {
         @include font(Poppins, normal, 600, 18px, #160051);
       }
     }

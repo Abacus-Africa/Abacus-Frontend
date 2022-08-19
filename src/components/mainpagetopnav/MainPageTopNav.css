@@ -1,0 +1,27 @@
+.dashboard-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 0px 0px 0px;
+}
+.dashboard-top .dashboard-top-greeting .greeting-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  color: #080e19;
+}
+.dashboard-top .dashboard-top-greeting .greeting-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.dashboard-top .dashboard-top-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.dashboard-top .dashboard-top-icons img {
+  width: 24px;
+  margin: 0px 5px;
+}/*# sourceMappingURL=MainPageTopNav.css.map */
