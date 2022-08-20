@@ -165,4 +165,14 @@
     width: 100%;
     font-size: 15px;
   }
+  .inventory .inventory-list .inventory-list-item .list-name {
+    font-size: 14px;
+    width: 70px;
+  }
+  .inventory .inventory-list .inventory-list-item .list-count .name {
+    font-size: 14px;
+  }
+  .inventory .inventory-list .inventory-list-item .list-price .name {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Inventory.css.map */
