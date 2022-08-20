@@ -50,6 +50,23 @@
   flex-direction: column;
   align-items: center;
 }
+.inventory .inventory-list .empty-list-button {
+  background: #4b29a6;
+  border-radius: 5px;
+  width: 152px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f0fdf4;
+  margin-top: 20px;
+}
 .inventory .inventory-list .empty-list {
   margin-top: 40px;
   display: flex;
@@ -83,6 +100,61 @@
   font-size: 14px;
   color: #f0fdf4;
   margin-top: 20px;
+}
+.inventory .inventory-list .inventory-list-item {
+  height: 64px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 20px;
+  margin: 10px 0px;
+}
+.inventory .inventory-list .inventory-list-item .list-name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #080e19;
+  width: 150px;
+}
+.inventory .inventory-list .inventory-list-item .list-count {
+  display: flex;
+  flex-direction: column;
+}
+.inventory .inventory-list .inventory-list-item .list-count .count {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4b29a6;
+}
+.inventory .inventory-list .inventory-list-item .list-count .name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #080e19;
+}
+.inventory .inventory-list .inventory-list-item .list-price {
+  display: flex;
+  flex-direction: column;
+}
+.inventory .inventory-list .inventory-list-item .list-price .count {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4b29a6;
+}
+.inventory .inventory-list .inventory-list-item .list-price .name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #080e19;
 }
 
 @media (max-width: 900px) {
