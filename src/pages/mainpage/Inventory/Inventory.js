@@ -1,5 +1,5 @@
 import { Box, Button, IconButton } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MainPageTopNav from '../../../components/mainpagetopnav/MainPageTopNav'
 import "./Inventory.scss"
 import searchIcon from "./../../../assets/icons/blueSearchIcon.svg"
@@ -7,11 +7,10 @@ import addIcon from "./../../../assets/icons/addIcon.svg"
 import trashIcon from "./../../../assets/icons/trashIcon.svg"
 import plusIcon from "./../../../assets/icons/plusIcon.svg"
 import InventoryModal from '../../../components/modals/InventoryModal/InventoryModal'
+import { useSelector } from 'react-redux'
 
 const Inventory = () => {
-  const [ listData ] = useState({
-
-  })
+  const {products } = useSelector((state)=>state.product)
   const [ AddProductStatus,setAddProductStatus ] = useState(false)
 
   function handleCloseAddProduct(){
@@ -20,6 +19,11 @@ const Inventory = () => {
   function handleOpenAddProduct(){
     setAddProductStatus(true)
   }
+  useEffect(() => {
+    console.log(products)
+  
+  }, [products])
+  
 
   return (
     <div className="inventory">
@@ -56,14 +60,12 @@ const Inventory = () => {
         
 
         <Box className="inventory-list">
-          {
-            listData ? (
+          
               <Box className="empty-list"> 
               <p>You do not have any items in your inventory yet.Start by adding a product now</p>
               <Button className="empty-list-button" onClick={handleOpenAddProduct}><Box component="img" src={plusIcon}/> Add Product</Button>
               </Box>
-            ) : null
-          }
+         
         </Box>
 
         <InventoryModal handleCloseAddProduct={handleCloseAddProduct} AddProductStatus={AddProductStatus} />

@@ -4,8 +4,12 @@ import "./InventoryModal.css";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import { Button } from "@mui/material";
+import { addProduct } from "../../../redux/product";
+import { useDispatch } from "react-redux/es/exports";
 
 const InventoryModal = (props) => {
+  const dispatch = useDispatch();
+
   return (
     <div>
       <Dialog
@@ -37,7 +41,8 @@ const InventoryModal = (props) => {
               sellingprice: values.sellingprice,
               quantity:values.quantity
             };
-            alert(JSON.stringify(body))
+            dispatch(addProduct(body))
+            // alert(JSON.stringify(body))
           }}
         >
               {({

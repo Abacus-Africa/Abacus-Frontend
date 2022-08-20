@@ -1,9 +1,9 @@
-.inventory-modal .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+.inventory-modal .MuiDialog-paper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px 80px;
-  min-height: 586px;
+  padding: 30px 45px;
+  min-height: 540px;
   background: #f9fafb;
   border-radius: 6px;
 }

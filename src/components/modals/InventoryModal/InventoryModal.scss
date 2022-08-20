@@ -7,13 +7,13 @@
 }
 
 .inventory-modal {
-  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+  .MuiDialog-paper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 80px;
+    padding: 30px 45px;
     // min-width: 436px;
-    min-height: 586px;
+    min-height: 540px;
     background: #f9fafb;
     border-radius: 6px;
   }
