@@ -1,4 +1,12 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, Grid, IconButton, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Box,
+  Grid,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Nav from "../../components/nav/Nav";
@@ -8,14 +16,9 @@ import "./Support.scss";
 import Footer from "../../components/footer";
 
 const Support = () => {
-  const [faqData] = useState([
+  const [faqFirstData] = useState([
     {
       question: "What is Abacus?",
-      answer:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-    },
-    {
-      question: "Can I manage my payroll using the software?",
       answer:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
@@ -25,18 +28,7 @@ const Support = () => {
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
     {
-      question: "Do I need to install software to do my accounting online?",
-      answer:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-    },
-    {
-      question:
-        "How long does it take to get the abacus accounting software set up?",
-      answer:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-    },
-    {
-      question: "Can I access my accounting using a mobile device?",
+      question: "How long does it take to get the abacus accounting software set up?",
       answer:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
@@ -46,18 +38,8 @@ const Support = () => {
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
     {
-      question: "Do I get customer support?",
-      answer:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-    },
-    {
-      question: "Is the Abacus software free?",
-      answer:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-    },
-    {
       question:
-        "Do I need to be an accountant or bookkeeper to use the Abacus software?",
+        "Is the Abacus software free?",
       answer:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
@@ -67,33 +49,13 @@ const Support = () => {
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
     {
-      question:
-        "Can I use the accounting software in collaboration with my bookkeeper?",
-      answer:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-    },
-    {
       question: "Do I have to be a techie to handle the software?",
       answer:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
     {
-      question:
-        "Can I give access to people other than my accountant/bookkeeper to use my account?",
-      answer:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-    },
-    {
-      question:
-        "Can I export my data to back it up or share it with my accountant?",
-      answer:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-    },
-    {
-      question:
-        "Will online accounting software take away my dislike for bookkeeping?",
-      answer:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+      question: "Can I export my data to back it up or share it with my accountant?",
+      answer:" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
     {
       question: "And what about those pesky hackers and thieves?",
@@ -101,34 +63,79 @@ const Support = () => {
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
     {
-      question: "What are the main features of Abacus?",
+      question:
+        "What kind of support do I get?",
       answer:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
     {
-      question: "What kind of support do I get?",
+      question: "What if the company is located outside Nigeria? Do I still receive support?",
+      answer:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+   
+  ]);
+
+  const [faqSecondData] = useState([
+    {
+      question: "Can I manage my payroll using the software?",
       answer:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
     {
-      question: "Is the support 24/7?",
+      question: "Do I need to install software to do my accounting online?",
+      answer:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      question: "Can I access my accounting using a mobile device?",
+      answer:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      question: "Do I get customer support?",
       answer:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
     {
       question:
-        "What if the company is located outside Nigeria? Do I still receive support?",
+        "Do I need to be an accountant or bookkeeper to use the Abacus software?",
+      answer:" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      question: "Can I use the accounting software in collaboration with my bookkeeper?",
       answer:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
     },
+    {
+      question: "Can I give access to people other than my accountant/bookkeeper to use my account?",
+      answer:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      question: "Will online accounting software take away my dislike for bookkeeping?",
+      answer:" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      question: "What are the main features of Abacus?",
+      answer:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+    {
+      question:
+        "Is the support 24/7?",
+      answer:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+    },
+   
+   
   ]);
-
   return (
     <>
       <Nav />
       <Box className="support-body">
         <Box className="faq-top">
-          <Typography variant="h5" className="faq-text-one" >
+          <Typography variant="h5" className="faq-text-one">
             FAQs
           </Typography>
           <Typography variant="p" className="faq-text-two">
@@ -144,38 +151,74 @@ const Support = () => {
             <IconButton className="icon">
               <SearchIcon />
             </IconButton>
-            <input class="input-field" type="text" placeHolder='Search Using Keyword' />
+            <input
+              class="input-field"
+              type="text"
+              placeHolder="Search Using Keyword"
+            />
           </Box>
         </Box>
 
         <Box className="faq-body">
           <Box className="faq-body-top">Frequently Asked Questions</Box>
-          <Grid container className="faq-body-box " rowSpacing={1} columnSpacing={2}>
-            {faqData.map((item, index) => {
-              return (
-                <Grid item xs={12} md={6} className='faq-list'>
-                  {" "}
-                  <Accordion className="faq-list-item" sx={{
-                    ".css-i4bv87-MuiSvgIcon-root":{
-                      color:'white'
-                    }
-                  }}>
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel1a-content"
-                      id="panel1a-header"
+          <Grid container className="faq-body-box-container" columnSpacing={2}>
+            <Grid item xs={12} md={6} className="faq-body-box">
+              {faqFirstData.map((item, index) => {
+                return (
+                  <Box className="faq-list">
+                    {" "}
+                    <Accordion
+                      className="faq-list-item"
+                      sx={{
+                        ".css-i4bv87-MuiSvgIcon-root": {
+                          color: "white",
+                        },
+                      }}
                     >
-                      <Typography variant='p'> {item.question}</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography>
-                       {item.answer}
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>{" "}
-                </Grid>
-              );
-            })}
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                      >
+                        <Typography variant="p"> {item.question}</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Typography>{item.answer}</Typography>
+                      </AccordionDetails>
+                    </Accordion>{" "}
+                  </Box>
+                );
+              })}
+            </Grid>
+
+            <Grid item xs={12} md={6} className="faq-body-box">
+              {faqSecondData.map((item, index) => {
+                return (
+                  <Box className="faq-list">
+                    {" "}
+                    <Accordion
+                      className="faq-list-item"
+                      sx={{
+                        ".css-i4bv87-MuiSvgIcon-root": {
+                          color: "white",
+                        },
+                      }}
+                    >
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                      >
+                        <Typography variant="p"> {item.question}</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Typography>{item.answer}</Typography>
+                      </AccordionDetails>
+                    </Accordion>{" "}
+                  </Box>
+                );
+              })}
+            </Grid>
           </Grid>
         </Box>
       </Box>
