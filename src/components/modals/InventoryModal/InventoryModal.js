@@ -13,7 +13,7 @@ const InventoryModal = (props) => {
 
   const [unit, setUnit] = React.useState("");
 
- 
+    
   const units = [
     {
       value: 'kg',
