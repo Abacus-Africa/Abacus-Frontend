@@ -1,5 +1,5 @@
 import { Box, Button, IconButton } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import MainPageTopNav from "../../../components/mainpagetopnav/MainPageTopNav";
 import "./Inventory.scss";
 import searchIcon from "./../../../assets/icons/blueSearchIcon.svg";
@@ -20,9 +20,9 @@ const Inventory = () => {
   function handleOpenAddProduct() {
     setAddProductStatus(true);
   }
-  useEffect(() => {
-    console.log(products);
-  }, [products]);
+  // useEffect(() => {
+  //   console.log(products);
+  // }, [products]);
 
   return (
     <div className="inventory">
@@ -43,7 +43,7 @@ const Inventory = () => {
       </Box>
 
       <Box className="inventory-functions">
-        <p className="functions-text">items</p>
+        <p className="functions-text">Items</p>
         <Box className="function-icons">
           <IconButton>
             <img src={searchIcon} alt="search" />

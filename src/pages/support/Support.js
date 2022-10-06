@@ -60,7 +60,7 @@ const Support = () => {
     {
       question: "And what about those pesky hackers and thieves?",
       answer:
-        "Good luck to them—in jail.The bank-level encryption of every account and the continuous monitoring of network traffic ensures that nobody, aside from you and the authorized personnel, can see your data.",
+        "Good luck to them in jail.The bank-level encryption of every account and the continuous monitoring of network traffic ensures that nobody, aside from you and the authorized personnel, can see your data.",
     },
     {
       question:

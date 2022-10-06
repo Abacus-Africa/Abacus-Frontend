@@ -52,8 +52,8 @@
     .empty-list-button {
       background: #4b29a6;
       border-radius: 5px;
-      width: 152px;
-      height: 40px;
+      width: 172px;
+      height: 45px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -61,6 +61,9 @@
       padding: 8px 16px;
       @include font(Open Sans, normal, 400, 14px, #f0fdf4);
       margin-top: 20px;
+      img{
+        margin-right: 5px;
+      }
     }
     .empty-list {
       margin-top: 40px;
@@ -77,8 +80,8 @@
       .empty-list-button {
         background: #4b29a6;
         border-radius: 5px;
-        width: 152px;
-        height: 40px;
+        width: 172px;
+        height: 45px;
         display: flex;
         flex-direction: row;
         justify-content: center;

@@ -262,23 +262,32 @@ const Dashboard = () => {
                   <TableCell className="table-values">{row.value}</TableCell>
                   <TableCell
                     className="table-status"
-                    sx={{
-                      background:
-                        row.status === "Completed"
-                          ? "#15803D"
-                          : row.status === "Pending"
-                          ? "#F38A20"
-                          : "#DC2626",
-                      color: "#F0FDF4",
-                      borderRadius: "20px",
+                    // sx={{
+                     
+                    //   display: "flex",
+                    //   flexDirection: "column",
+                    //   justifyContent: "center",
+                    //   alignItems: "center",
+                    // }}
+                  >
+                    <Box sx={{
+                       background:
+                       row.status === "Completed"
+                         ? "#15803D"
+                         : row.status === "Pending"
+                         ? "#F38A20"
+                         : "#DC2626",
+                         color: "#F0FDF4",
+                         borderRadius: "20px",
                       padding: "6px 6px",
+                      width:"100px",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "center",
                       alignItems: "center",
-                    }}
-                  >
+                    }}>
                     {row.status}
+                    </Box>
                   </TableCell>
                   <TableCell className="table-values">
                     {row.description}

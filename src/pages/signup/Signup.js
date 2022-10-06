@@ -1,7 +1,7 @@
-import React from "react";
-import "./Signup.css";
+import React, { useState } from "react";
+import "./Signup.scss";
 import girl from "../../assets/images/girl.png";
-import { Typography } from "@mui/material";
+import { Typography,  IconButton, } from "@mui/material";
 import { Box } from "@mui/system";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
@@ -16,8 +16,21 @@ import * as Yup from "yup";
 import google from './../../assets/icons/Google Icon.svg'
 import apple from './../../assets/icons/Apple Icon.svg'
 import Nav from "../../components/nav/Nav";
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 const Signup = () => {
+
+  const [ passwordState,SetPasswordState ] = useState(true)
+
+  const passwordVisibility=()=>{
+    if ( passwordState === true){
+      SetPasswordState(false)
+    }
+    else{
+      SetPasswordState(true)
+    }
+  }
   return (
     <>
     <Nav />
@@ -33,7 +46,7 @@ const Signup = () => {
 
         <div className="sign_up_form_wrapper">
           <div className="sign_up_form">
-            <div className="text-center fw-bolder text-white">Sign Up</div>
+            <div className="text-center signup_text">Sign Up</div>
 
             <Formik
               initialValues={{
@@ -111,18 +124,25 @@ const Signup = () => {
 
                   <div className="signup_input_wrapper">
                     <label htmlFor="password"> Password </label>
-                    <input
-                      type="password"
-                      id="password"
-                      name='password'
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.password}
-                      className={
-                        touched.password && errors.password ? "info-error" : null
-                      }
-                      placeholder="Enter your password"
-                    />
+                    <Box className="password_container">
+                      <IconButton  onClick={passwordVisibility} className="password_icon">
+                        { passwordState ? <VisibilityOffIcon  /> : <VisibilityIcon /> }
+                      </IconButton>
+                      <input
+                        type={ passwordState ? "password" : "text" }
+                        id="password"
+                        name="password"
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        value={values.password}
+                        className={
+                          touched.password && errors.password
+                            ? "info-error"
+                            : null
+                        }
+                        placeholder="Enter your password"
+                      />
+                    </Box>
                       {errors.password && touched.password && (
                       <span className="error">{errors.password}</span>
                     )}
@@ -130,18 +150,25 @@ const Signup = () => {
 
                   <div className="signup_input_wrapper">
                     <label htmlFor="confirm-password"> Confirm password </label>
-                    <input
-                      type="password"
-                      id="confirmpassword"
-                      name='confirmpassword'
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.confirmpassword}
-                      className={
-                        touched.confirmpassword && errors.confirmpassword ? "info-error" : null
-                      }
-                      placeholder="Re-enter your password"
-                    />
+                    <Box className="password_container">
+                      <IconButton onClick={passwordVisibility} className="password_icon">
+                        { passwordState ? <VisibilityOffIcon  /> : <VisibilityIcon  /> }
+                      </IconButton>
+                      <input
+                        type={ passwordState ? "password" : "text" }
+                        id="confirmpassword"
+                        name="confirmpassword"
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        value={values.confirmpassword}
+                        className={
+                          touched.confirmpassword && errors.confirmpassword
+                            ? "info-error"
+                            : null
+                        }
+                        placeholder="Re-Enter your password"
+                      />
+                    </Box>
                      {errors.confirmpassword && touched.confirmpassword && (
                       <span className="error">{errors.confirmpassword}</span>
                     )}
@@ -151,7 +178,7 @@ const Signup = () => {
                     <FormControlLabel
                       control={<Checkbox color="secondary" />}
                       label="By clicking continue , I agree to the company's terms of service"
-                      sx={{ color: "white" }}
+                      sx={{ color: "white",fontSize: "16px" }}
                     />
                   </Box>
 
