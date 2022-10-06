@@ -1,7 +1,7 @@
-import React from "react";
-import "./Login.css";
+import React, { useState } from "react";
+import "./Login.scss";
 import girl from "../../assets/images/girl.png";
-import { Typography } from "@mui/material";
+import { Typography,  IconButton, } from "@mui/material";
 import { Box } from "@mui/system";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
@@ -13,40 +13,49 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import { Link } from "react-router-dom";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import google from './../../assets/icons/Google Icon.svg'
-import apple from './../../assets/icons/Apple Icon.svg'
+import google from "./../../assets/icons/Google Icon.svg";
+import apple from "./../../assets/icons/Apple Icon.svg";
 import Nav from "../../components/nav/Nav";
-
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 const Login = () => {
+
+  const [ passwordState,SetPasswordState ] = useState(true)
+
+  const passwordVisibility=()=>{
+    if ( passwordState === true){
+      SetPasswordState(false)
+    }
+    else{
+      SetPasswordState(true)
+    }
+  }
   return (
     <>
-    <Nav />
+      <Nav />
       <div className="login_wrapper">
         <div className="login_side_image">
           <img src={girl} alt="girl" />
           <div>
-            <span>Abacus</span>, the Accounting Software to manage your
-            S.M.B
+            <span>Abacus</span>, the Accounting Software to manage your S.M.B
           </div>
         </div>
 
         <div className="log_in_form_wrapper">
           <div className="log_in_form">
-            <div className="text-center fw-bolder text-white">Log In</div>
+            <div className="text-center login_text">Login</div>
 
             <Formik
               initialValues={{
                 email: "",
                 password: "",
               }}
-
-
               validationSchema={Yup.object({
                 email: Yup.string()
                   .required("email is required")
                   .email("invalid email address"),
-                  password: Yup.string().required("password is required"),
+                password: Yup.string().required("password is required"),
               })}
 
               // onSubmit={async (values) =>{
@@ -57,7 +66,6 @@ const Login = () => {
               //   alert(JSON.stringify(body))
               // }}
             >
-
               {({
                 values,
                 errors,
@@ -87,22 +95,26 @@ const Login = () => {
                   </div>
 
                   <div className="login_input_wrapper">
-                    
                     <label htmlFor="password"> Password </label>
-                    <input
-                      type="password"
-                      id="password"
-                      name="password"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.password}
-                      className={
-                        touched.password && errors.password
-                          ? "info-error"
-                          : null
-                      }
-                      placeholder="Enter your password"
-                    />
+                    <Box className="password_container">
+                      <IconButton onClick={passwordVisibility}className="password_icon">
+                        { passwordState ? <VisibilityOffIcon  /> : <VisibilityIcon  /> }
+                      </IconButton>
+                      <input
+                        type={ passwordState ? "password" : "text" }
+                        id="password"
+                        name="password"
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        value={values.password}
+                        className={
+                          touched.password && errors.password
+                            ? "info-error"
+                            : null
+                        }
+                        placeholder="Enter your password"
+                      />
+                    </Box>
                     {errors.password && touched.password && (
                       <span className="error">{errors.password}</span>
                     )}
@@ -120,16 +132,21 @@ const Login = () => {
                   </Box>
 
                   <Box className="btn-wrapper ">
-                  <Link to='/mainpage/dashboard'>  <Button variant="outlined" type='submit'>Log In</Button> </Link>
+                    <Link to="/mainpage/dashboard">
+                      {" "}
+                      <Button variant="outlined" type="submit">
+                        Log In
+                      </Button>{" "}
+                    </Link>
                     <Typography variant="h6">Or</Typography>
                     <Box>
                       <Button variant="contained">
                         {" "}
-                        <img src={google} alt='google'/>
+                        <img src={google} alt="google" />
                         Login with Google
                       </Button>
                       <Button variant="contained">
-                      <img src={apple} alt='apple'/>
+                        <img src={apple} alt="apple" />
                         Login with Apple
                       </Button>
                     </Box>

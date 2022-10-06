@@ -32,7 +32,14 @@
         label {
           @include font(Roboto, normal, 400, 14px, rgba(0, 0, 0, 0.85));
         }
-        input {
+        .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input{
+          width: 256px;
+          height: 32px;
+          background: #ffffff;
+          border-radius: 6px;
+          padding: 3px 10px;
+        }
+        input,select {
           width: 276px;
           height: 32px;
           background: #ffffff;

@@ -1,3 +1,10 @@
+@mixin font($fam, $style, $weight, $size,$color) {
+  font-family: $fam;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}
 .signup_wrapper {
   width: 100%;
   min-height: 100vh;
@@ -17,9 +24,11 @@
     div {
       padding-left: 10%;
       width: calc(60% + 100px);
+      @include font('Poppins',normal ,400 ,20px,#0E0033 );
       span {
         font-weight: 800;
         font-size: 20px;
+        @include font('Poppins',normal ,700 ,28px,#0E0033 );
       }
     }
   }
@@ -37,6 +46,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      .signup_text{
+        @include font('Poppins',normal ,600 ,56px,#FFFFFF )
+      }
       form {
         width: 100%;
       }
@@ -52,6 +64,15 @@
         flex-direction: column;
         width: 100%;
         margin: 30px 0px 0px 0px;
+        .password_container {    
+          .password_icon {
+            padding: 10px;
+            min-width: 40px;
+            position: absolute;
+            left: 82%;
+          }
+
+        }
         label {
           color: white;
           font-size: 16px;
@@ -84,8 +105,10 @@
         }
       }
       .form_check {
+        margin-top: 10px;
         span {
-          font-size: 9px;
+          font-size: 14px;
+          @include font('Open Sans',normal , 400, 14x,#FFFFFF )
         }
         svg {
           color: white;
@@ -190,6 +213,13 @@
       width: 100%;
       .sign_up_form {
         width: 80%;
+        .signup_input_wrapper{
+          .password_container{
+            .password_icon{
+              left: 80%;
+            }
+          }
+        }
         .btn-wrapper {
           div {
             flex-direction: column;
